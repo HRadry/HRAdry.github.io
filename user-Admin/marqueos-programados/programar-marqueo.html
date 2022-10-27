@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrar nuevo marqueo</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../../img/forest.png" alt="" width="50px"></a>
+
+            <div class="dropdown">
+                <button class="border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Adriana Hernández Ramírez
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Mi perfil</button></li>
+                    <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container my-5 col-sm-12 col-lg-6">
+        <div class="text-center border-bottom mb-5">
+            <h2>Programar nuevo marqueo</h2>
+        </div>
+
+        <!-- <div class="text-center icon-title-color">
+                <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+            </div> -->
+
+        <form>
+            
+            <h4 class="mt-3 mb-2">Datos generales</h4>
+            <div class="d-flex justify-content-center">
+                <div class="mb-3 col-12 border rounded bg-soft text-center py-1 shadow-sm">
+                    <h5 class="fw-bold">Anualidad 2</h5>
+                </div>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select shadow-sm" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">Capulalpam</option>
+                    <option value="2">Comaltepec</option>
+                    <option value="3">La Trinidad</option>
+                    <option value="4">Xiacui</option>
+                </select>
+                <label for="floatingSelect">Comunidad</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="datetime-local" class="form-control shadow-sm" id="form-floating" placeholder="Nombre">
+                <label for="floatingInput">Fecha y hora</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select shadow-sm" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">IV-2a</option>
+                    <option value="2">IV-5a</option>
+                    <option value="3">IV-2b</option>
+                    <option value="4">IV-1</option>
+                </select>
+                <label for="floatingSelect">Rodal</label>
+            </div>
+            <div class="row justify-content-between">
+                <div class="form-floating mb-3 col-md-6 col-lg-6">
+                    <input disabled type="text" class="form-control shadow-sm" id="form-floating" placeholder="subrodal"
+                        value="Zona libre">
+                    <label for="form-floating" class="form-label ps-4">Subrodal</label>
+                </div>
+                <div class="form-floating mb-3 col-md-6 col-lg-6">
+                    <input disabled type="text" class="form-control shadow-sm" id="form-floating"
+                        placeholder="superficie" value="5.02">
+                    <label for="form-floating" class="form-label ps-4">Superficie</label>
+                </div>
+                <div class="form-floating mb-3 col-md-6 col-lg-6">
+                    <input disabled type="text" class="form-control shadow-sm" id="form-floating"
+                        placeholder="tratamiento" value="PACL">
+                    <label for="form-floating" class="form-label ps-4">Tratamiento</label>
+                </div>
+                <div class="form-floating mb-3 col-md-6 col-lg-6">
+                    <input disabled type="text" class="form-control shadow-sm" id="form-floating" placeholder="metros"
+                        value="248.70">
+                    <label for="form-floating" class="form-label ps-4">Volumen máximo</label>
+                </div>
+            </div>
+
+            <section class="table-responsive-sm my-1 text-center border shadow-sm rounded">
+                <table class="table table table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th>Género</th>
+                            <th>m3 VTA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pinus</td>
+                            <td>248.703283638359</td>
+                        </tr>
+                        <tr>
+                            <td>Querus</td>
+                            <td>21.980112142104</td>
+                        </tr>
+                        <tr>
+                            <td>Alnus</td>
+                            <td>12.0229627041934</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <h4 class="mt-4">Usuarios encargados del registro</h4>
+            <div class="border mb-3 p-3 rounded shadow-sm">                
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultOne">
+                    <label class="form-check-label" for="flexCheckDefaultOne">
+                        Emmanuel Gracida
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultTwo">
+                    <label class="form-check-label" for="flexCheckDefaultTwo">
+                        Adriana Hernandez
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultThree">
+                    <label class="form-check-label" for="flexCheckDefaultThree">
+                        Juan Ruiz
+                    </label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+              <h4>Comentario</h4>
+              <textarea class="form-control" name="" id="" rows="3"></textarea>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div class="text-center my-3">
+        <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
+            <span>Cancelar</span>
+        </button>
+        <button href="#" type="submit" class="btn btn-lg btn-primary">
+            <span>Guardar</span>
+        </button>
+    </div>
+    </form>
+    </div>
+
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+</body>
+
+</html>

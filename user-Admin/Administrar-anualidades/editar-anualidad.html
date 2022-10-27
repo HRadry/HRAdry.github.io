@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eitar anualidad</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/dataTables.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../../img/forest.png" alt="" width="50px"></a>
+
+            <div class="dropdown">
+                <button class="border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Adriana Hernández Ramírez
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Mi perfil</button></li>
+                    <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 col-sm-12 col-lg-6">
+        <div class="text-center border-bottom mb-5">
+            <h2>Editar anualidad</h2>
+        </div>
+        
+        <form class="d-flex">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre</label>
+                    <input type="text" name="" id="" class="form-control" value="1">
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="mb-3 col-lg-6 col-sm-12">
+                <label for="" class="form-label">Comunidad</label>
+                <select class="form-select form-select" name="" id="">
+                    <option selected>Xiacui</option>
+                    <option value="">Capulalpam</option>
+                    <option value="">Xiacui</option>
+                    <option value="">La trinidad</option>
+                    <option value="">Comaltepec</option>
+                </select>
+            </div>
+
+            <div class="mb-3 col-lg-6 col-sm-12">
+                <label for="" class="form-label">Rodal</label>
+                <select class="form-select form-select" name="" id="">
+                    <option selected>IV-2a</option>
+                    <option value="">V-3b</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">
+                    Agregar
+                </button>
+            </div>
+        </div>
+
+        <section class="table-responsive-sm p-1 mt-4">
+            <table id="example" class="table table-striped table-hover align-middle display text-center"
+                style=  "width:100%">
+                <thead class="thead-style   ">
+                    <tr>
+                        <th>#</th>
+                        <th>Comunidad</th>
+                        <th>Rodal</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Capulalpam</td>
+                        <td>IV-2a</td>
+                        <td class="text-center">
+                            <a href="" type="button" class="btn btn-outline-danger rounded-pill p-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDelete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Xiacui</td>
+                        <td>IV-2a</td>
+                        <td class="text-center">
+                            <a href="" type="button" class="btn btn-outline-danger rounded-pill p-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDelete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>La trinidad</td>
+                        <td>V-2b</td>
+                        <td class="text-center">
+                            <a href="" type="button" class="btn btn-outline-danger rounded-pill p-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDelete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>                   
+                </tbody>
+            </table>
+        </section>
+
+        <div class="text-center my-3">
+            <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+                <span>Regresar</span>
+            </button>
+            <button type="submit" class="btn btn-lg btn-outline-primary">
+                Guardar cambios
+            </button>
+        </div>
+    </div>
+    <!-- Modal de confirmación Borrar anualidad -->
+    <!-- <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-danger">
+                <div class="modal-header text-center">
+
+                    <h5 class="modal-title text-danger" id="exampleModalLabel">Eliminar anualidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row justify-content-around">
+                    <div class="p-2 text-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                            <path
+                                d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                            <path
+                                d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <p class="fw-semibold">¿Deseas eliminar esta anualidad?</p>
+                        <span class="small text-gray">Esta acción no se podrá deshacer</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">No, deseo
+                        conservarlo</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- /Modal de confirmación Borrar anualidad -->
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="../../js/jquery.dataTables.min.js"></script>
+    <script src="../../js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                language: {
+                    url: "../../json/dataTableSpanishLanguage.json",
+                },
+                "order": [
+                    [0, "asc"]
+                ],
+                'columnDefs': [{
+                    "width": "auto",
+                    "targets": [3, 4, 5],
+                    "orderable": false,
+                }],
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nuevo rodal</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../../img/forest.png" alt="" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-color-nav" aria-current="page" href="#">Adriana Hernández</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-color-nav" aria-current="page" href="#">Cerrar sesión</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="mx-4 mx-sm-auto d-flex flex-column gap-5 justify-content-center  md-auto col-lg-6 lg:p-x-4">
+            <form action="">
+                <div class="d-flex flex-column justify-content-center mb-5 border-bottom">
+                    <h1 class="text-center fw-semibold  m-0">Registrar nuevo rodal para Capulalpam</h1>
+                </div>
+
+                <p class="fs-4 mt-5">Datos generales</p>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="form-floating" placeholder="Nombre">
+                    <label for="floatingInput">Nombre del rodal</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="form-floating" placeholder="Nombre">
+                    <label for="floatingInput">Superficie</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="form-floating" placeholder="Nombre">
+                    <label for="floatingInput">Tratamiento</label>
+                </div>
+                <div class="form-floating input-group mb-3 mt-3">
+                    <input type="text" class="form-control" id="form-floating" placeholder="Volumen">
+                    <span class="input-group-text  rounded-end">m³</span>
+                    <label for="floatingInput">Volumen máximo</label>
+                </div>
+
+                <p class="fs-4 mt-4">Género y volumen</p>
+                <section class="table-responsive-sm mt-2 text-center border-0">
+                    <table id="example" class="table">
+                        <thead>
+                            <tr>
+                                <th>Género</th>
+                                <th>Volumen</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <select class="form-select form-select" name="" id="">
+                                            <option selected>Selecciona una opción</option>
+                                            <option value="">Pinus</option>
+                                            <option value="">Alnus</option>
+                                            <option value="">Querus</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                        <span class="input-group-text">m³</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button" id="button"
+                                        class="btn btn-outline-danger btn-remove">x</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <div class="d-flex justify-content-start">
+                    <button type="button" id="addRow" onclick="newRow()" class="btn btn-outline-primary">+</button>
+                </div>
+
+                <div class="text-center my-3">
+                    <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
+                        <span>Cancelar</span>
+                    </button>
+                    <button href="" type="submit" class="btn btn-lg btn-primary">
+                        <span>Guardar</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../../js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var t = $('#example').DataTable({
+                'filter': false,
+                'info': false,
+                'bPaginate': false,
+                'ordering': false
+
+            });
+            let column1 = `        <div>
+                                        <select class="form-select form-select" name="" id="">
+                                            <option selected>Siona una opción</option>
+                                            <option value="">Pinus</option>
+                                            <option value="">Alnus</option>
+                                            <option value="">Querus</option>
+                                        </select>
+                                    </div>`;
+            let column2 = `                                    
+                                    <div class="input-group">
+                                        <input type="text" class="form-control"
+                                            aria-label="Amount (to the nearest dollar)">
+                                        <span class="input-group-text">m³</span>
+                                    </div>`;
+            let column3 = `<button< class="btn btn-outline-danger">x</button>`;
+
+            $('#addRow').on('click', function () {
+                t.row.add([column1, column2, column3]).draw(false);
+            });
+
+           
+        });
+
+        function quitar(btn) {
+                var row = btn.parentNode;
+                row.parentNode.removeChild(row);
+            }   
+    </script>
+
+</body>
+
+</html>

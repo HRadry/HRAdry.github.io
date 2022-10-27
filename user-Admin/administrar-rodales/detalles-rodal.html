@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detalles rodal</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../../img/forest.png" alt="" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-color-nav" aria-current="page" href="#">Adriana Hernández</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-color-nav" aria-current="page" href="#">Cerrar sesión</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container my-5 col-sm-12 col-lg-6">
+
+        <div class="d-flex flex-column justify-content-center mb-5 border-bottom">
+            <h1 class="text-center fw-semibold  m-0">Detalles rodal</h1>
+        </div>
+
+
+        <!-- Datos generales -->
+        <p class="fs-4 mt-5">Datos generales</p>
+        <div class="rounded border shadow-sm col-12">
+            <div class="row border-bottom py-2 mx-0 bg-light rounded-top">
+                <div class="col-6 fw-bold">Nombre:</div>
+                <div class="col-6 fw-light">IV-a</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Superficie:</div>
+                <div class="col-6 fw-light">213</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Tratamiento:</div>
+                <div class="col-6 fw-light">PACL</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Volumen máximo:</div>
+                <div class="col-6 fw-light">132</div>
+            </div>
+        </div>
+
+        <p class="fs-4 mt-5">Género y volumen</p>
+        <section class="table-responsive-sm my-3 text-center border shadow-sm rounded">
+            <table class="table table table-striped mb-0">
+                <thead>
+                    <tr>
+                        <th>Género</th>
+                        <th>m3 VTA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pinus</td>
+                        <td>248.703283638359</td>
+                    </tr>
+                    <tr>
+                        <td>Querus</td>
+                        <td>21.980112142104</td>
+                    </tr>
+                    <tr>
+                        <td>Alnus</td>
+                        <td>12.0229627041934</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="text-center mt-5">
+            <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" widtd="30" height="30" fill="currentColor"
+                    class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+                Regresar
+            </button>
+            <button href="#" type="submit" class="btn btn-lg btn-primary">Editar</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        let template = `
+                <tr>
+                    <td> <div class="mb-3">
+                                    <select class="form-select form-select-sm" name="" id="">
+                                        <option selected>Select one</option>
+                                        <option value="">New Delhi</option>
+                                        <option value="">Istanbul</option>
+                                        <option value="">Jakarta</option>
+                                    </select>
+                                </div></td>
+                    <td> <input type="text" class="rounded border"></td>
+                </tr>`;
+        function newRow() {
+            let table = document.getElementById("example")
+
+            table.innerHTML += template;
+        }
+    </script>
+
+</body>
+
+</html>

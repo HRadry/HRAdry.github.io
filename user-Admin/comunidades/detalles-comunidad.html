@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mapas</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/dataTables.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../../img/forest.png" alt="" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-color-nav" aria-current="page" href="#">Adriana Hernández</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-color-nav" aria-current="page" href="#">Cerrar sesión</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 col-sm-12 col-lg-6">
+        <div class="text-center border-bottom mb-5">
+            <h2>Mapas y rodales de Santiago Xiacui</h2>
+        </div>
+
+        <p class="fs-4 mt-5">Mapas</p>
+        <section class="table-responsive-sm my-3 text-center">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Tipo de mapa</th>
+                        <th>Archivo PDF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mapa principal</td>
+                        <td>
+                            <button type="button" id="button" class="btn btn-sm text-danger rounded-pill p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mapa principal</td>
+                        <td>
+                            <button type="button" id="button" class="btn btn-sm text-danger rounded-pill p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mapa principal</td>
+                        <td>
+                            <button type="button" id="button" class="btn btn-sm text-danger rounded-pill p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-filetype-pdf" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <p class="fs-4 mt-5">Rodales</p>
+        <section class="table-responsive-sm my-3 text-center">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Rodal</th>
+                        <th>Detalles del rodal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rodal IV-2a</td>
+                        <td>
+                            <button type="button" id="button" class="btn text-info rounded-pill p-2" 
+                            data-bs-toggle="modal" data-bs-target="#detallesRodal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-info-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rodal IV-2a</td>
+                        <td>
+                            <button type="button" id="button" class="btn text-info rounded-pill p-2" 
+                            data-bs-toggle="modal" data-bs-target="#detallesRodal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-info-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rodal IV-2a</td>
+                        <td>
+                            <button type="button" id="button" class="btn text-info rounded-pill p-2" 
+                            data-bs-toggle="modal" data-bs-target="#detallesRodal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-info-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rodal IV-2a</td>
+                        <td>
+                            <button type="button" id="button" class="btn text-info rounded-pill p-2" 
+                            data-bs-toggle="modal" data-bs-target="#detallesRodal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-info-lg" viewBox="0 0 16 16">
+                                    <path
+                                        d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z" />
+                                </svg>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="text-center my-3">
+            <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+                <span>Regresar</span>
+            </button>
+        </div>
+    </div>
+
+     <!-- Modal Detalles Rodal-->
+     <div class="modal fade" id="detallesRodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+         <div class="modal-content">
+             <div class="modal-header border-bottomm border-success bg-primary text-white">
+                 <h1 class="modal-title fs-5" id="staticBackdropLabel">Nuevo Rodal</h1>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body">
+                 <h5>Datos generales</h5>
+                 <div class="rounded border shadow-sm col-12 mb-3">
+                     <div class="row border-bottom py-2 mx-0 bg-light rounded-top">
+                         <div class="col-6 fw-semibold">Nombre:</div>
+                         <div class="col-6 fw-light">IV-a</div>
+                     </div>
+                     <div class="row border-bottom py-2 mx-0">
+                         <div class="col-6 fw-semibold">Superficie:</div>
+                         <div class="col-6 fw-light">213</div>
+                     </div>
+                     <div class="row border-bottom py-2 mx-0 bg-light">
+                         <div class="col-6 fw-semibold">Tratamiento:</div>
+                         <div class="col-6 fw-light">PACL</div>
+                     </div>
+                     <div class="row border-bottom py-2 mx-0">
+                         <div class="col-6 fw-semibold">Volumen máximo:</div>
+                         <div class="col-6 fw-light">132</div>
+                     </div>
+                 </div>
+
+                 <h5>Género y volumen</h5>
+                 <section class="table-responsive-sm my-3 text-center border shadow-sm rounded">
+                     <table class="table table table-striped mb-0">
+                         <thead>
+                             <tr>
+                                 <th>Género</th>
+                                 <th>m3 VTA</th>
+                             </tr>
+                         </thead>
+                         <tbody>
+                             <tr>
+                                 <td>Pinus</td>
+                                 <td>248.703283638359</td>
+                             </tr>
+                             <tr>
+                                 <td>Querus</td>
+                                 <td>21.980112142104</td>
+                             </tr>
+                             <tr>
+                                 <td>Alnus</td>
+                                 <td>12.0229627041934</td>
+                             </tr>
+                         </tbody>
+                     </table>
+                 </section>
+             </div>
+         </div>
+     </div>
+ </div>
+ <!-- /Modal Detalles Rodal -->
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="../../js/jquery.dataTables.min.js"></script>
+    <script src="../../js/dataTables.bootstrap5.min.js"></script>
+</body>
+
+</html>
