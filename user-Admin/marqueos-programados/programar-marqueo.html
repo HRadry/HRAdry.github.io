@@ -71,7 +71,7 @@
                 </select>
                 <label for="floatingSelect">Tipo de actividad</label>
             </div>
-            <div class="habitual">
+            <div class="habitual d-none">
                 <div class="form-floating mb-3">
                     <select class="form-select shadow-sm" id="floatingSelect"
                         aria-label="Floating label select example">
@@ -155,7 +155,7 @@
             </div>
 
             <div class="mb-3">
-                <h4>Comentario</h4>
+                <h4>Comentarios</h4>
                 <textarea class="form-control" name="" id="" rows="3"></textarea>
             </div>
         </form>
@@ -187,9 +187,9 @@
             var selectValue = $(this).val();
 
             if (selectValue == '1') {
-                $('.habitual').show();
+                $('.habitual').removeClass("d-none");
             } else {
-                $('.habitual').hide();
+                $('.habitual').addClass("d-none");
             }
         });
     </script>
