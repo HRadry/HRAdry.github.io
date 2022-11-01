@@ -40,11 +40,7 @@
 .title-page {
   font-family: Montserrat-Regular;
   color: #72CC50 ;
-  border-bottom: 1px solid #9ea49b57;
-  /* border-image-slice: 1;
-  border-width: 1px;
-  border-image-source: linear-gradient(to right, #69ff00, #67ef1f, #65df2c, #63d035, #61c03b, #61c03b, #61c03b, #61c03b, #63d035, #65df2c, #67ef1f, #69ff00); */
-}
+ }
 
 html,
 body{
@@ -167,6 +163,11 @@ body{
   color:white;
   box-shadow: 0px 25px 15px -9px rgba(0, 0, 0, 0.301);  
 }
+.btn-details:focus{
+  border-color: #006DB4;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #006cb4a8!important;
+}
 
 .btn-update{
   border-color: #e0e0e1af;
@@ -180,19 +181,38 @@ body{
   color:white;
   box-shadow: 0px 25px 15px -9px rgba(0, 0, 0, 0.301);  
 }
+.btn-update:focus{
+  border-color: #BBD04F;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #bbd04f96!important;
+}
 
 .btn-delete{
   border-color: #e0e0e1af;
   color:#b91c1c;
   box-shadow: 0px 17px 14px -9px rgba(0, 0, 0, 0.301);
 }
-
 .btn-delete:hover{
   background-color: #b91c1c;
   border-color: #b91c1c;
   color:white;
   box-shadow: 0px 25px 15px -9px rgba(0, 0, 0, 0.301);  
 }
+.btn-delete:focus{
+  border-color: #b91c1c;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #b91c1c94!important;
+}
+
+/* -Tables- */
+
+.thead-style {
+  
+  border-color:#72CC50;
+}
+
+
+
 /* /Main */
 
 
@@ -463,7 +483,7 @@ body{
   --bs-accordion-active-color: #4d7c0f;
   --bs-accordion-active-bg: #ecfccb;
 }
-
+/* 
 .table {
   --bs-table-bg: transparent;
   --bs-table-striped-color: #272420;
@@ -480,7 +500,7 @@ body{
 }
 .align-middle {
   vertical-align: middle !important;
-}
+} */
 
 .btn-maps {
   color: #ffff;
@@ -519,14 +539,6 @@ tr.group,
 tr.group:hover {
   background-color: #ddd !important;
 }
-
-
-
-.thead-style {
-  border-color: #365314;
-  color: #365314;
-}
-
 
 
 .icon-title-color {
