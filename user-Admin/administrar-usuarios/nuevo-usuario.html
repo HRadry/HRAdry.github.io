@@ -11,17 +11,43 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top px-1">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="../../img/forest.png" alt="" width="50px"></a>
 
-            <div class="dropdown">
-                <button class="border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Adriana Hernández Ramírez
-                </button>
+            <div class="dropdown column">
+                <div class="border-0 dropdown-toggle d-flex flex-row" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="p-2">
+                        <img src="../../img/profile.svg" alt="" width="35px">
+                    </div>
+                    <div>
+                        <span class="fw-semibold m-0 small">Adriana Hernández</span class="fw-semibold">
+                        <br>
+                        <span class="small">Técnico</span>
+                    </div>
+                </div>
                 <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Mi perfil</button></li>
-                    <li><button class="dropdown-item" type="button">Cerrar sesión</button></li>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person text-color-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                            Mi perfil
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-door-open text-color-primary" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
+                                <path
+                                    d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
+                            </svg>
+                            Cerrar sesión
+                        </button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -29,39 +55,42 @@
 
 
     <div class="container my-5 d-flex flex-column col-lg-6">
-                <div class="text-center border-bottom mb-5">
-                    <h2>Registrar nuevo usuario</h2>
+                <div class="text-center mb-3">
+                    <h2 class="title-page border-bottom">Registrar nuevo usuario</h2>
                 </div>
 
-            <div class="text-center icon-title-color">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+            <div class="text-center icon-title-color mb-3">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
                     <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                     <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-                  </svg>
+                </svg> -->
+
+                <img src="/img/add-user.svg" alt="" width="180">
             </div>
 
             <form>
-
-                <div class="form-floating mb-3">
-                    <input type="name" class="form-control" id="form-floating" placeholder="Nombre">
-                    <label for="floatingInput">Nombre</label>
-                </div>
-                <div class="row justify-content-between">
-                    <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
-                        <input type="text" class="form-control" id="form-floating" placeholder="apellido-paterno">
-                        <label for="form-floating" class="form-label ps-4">Apellido paterno</label>
+                <div>
+                    <div class="form-floating mb-3">
+                        <input type="name" class="form-control box-input" id="form-floating" placeholder="Nombre">
+                        <label for="floatingInput">Nombre</label>
                     </div>
-                    <div class="form-floating mb-3 col-md-6 col-lg-6">
-                        <input type="text" class="form-control" id="form-floating" placeholder="apellido-paterno">
-                        <label for="form-floating" class="form-label ps-4">Apellido materno</label>
+                    <div class="row justify-content-between">
+                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
+                            <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
+                            <label for="form-floating" class="form-label ps-4">Apellido paterno</label>
+                        </div>
+                        <div class="form-floating mb-3 col-md-6 col-lg-6">
+                            <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
+                            <label for="form-floating" class="form-label ps-4">Apellido materno</label>
+                        </div>
                     </div>
                 </div>
                 <!-- <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="form-floating" placeholder="apellido-paterno">
+                    <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
                     <label for="form-floating" class="form-label">Número telefónico</label>
                 </div> -->
                 <div class="form-floating mb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <select class="form-select box-input" id="floatingSelect" aria-label="Floating label select example">
                         <option selected>Selecciona una opción</option>
                         <option value="1">Capulalpam</option>
                         <option value="2">Comaltepec</option>
@@ -71,7 +100,7 @@
                     <label for="floatingSelect">Comunidad a la que pertenece</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <select class="form-select box-input" id="floatingSelect" aria-label="Floating label select example">
                         <option selected>Selecciona una opción</option>
                         <option value="1">Técnico</option>
                         <option value="2">Administrador</option>
@@ -80,17 +109,17 @@
                 </div>
                 <div class="row justify-content-between">
                     <div class="form-floating mb-3 col-md-6 col-lg-6">
-                        <input type="mail" class="form-control" id="form-floating" placeholder="apellido-paterno">
+                        <input type="mail" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
                         <label for="form-floating" class="form-label ps-4">Correo</label>
                     </div>
                     <div class="form-floating mb-3 col-md-6 col-lg-6">
-                        <input type="text" class="form-control" id="form-floating" placeholder="apellido-paterno">
+                        <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
                         <label for="form-floating" class="form-label ps-4">Contraseña</label>
                     </div>
                 </div>
 
                 <div class="text-center my-3">
-                    <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
+                    <button href="#" type="submit" class="btn btn-lg btn-outline-secondary">
                         <span>Cancelar</span>
                     </button>
                     <button href="#" type="submit" class="btn btn-lg btn-primary">

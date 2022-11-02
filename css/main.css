@@ -97,6 +97,43 @@ body{
   box-shadow: 0px 17px 14px -9px rgba(0, 0, 0, 0.301);
 }
 
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #A4AE9E;
+  --bs-btn-border-color: #7a8275;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #70766c;
+  --bs-btn-hover-border-color: #A4AE9E;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #A4AE9E;
+  --bs-btn-active-border-color: #A4AE9E;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #A4AE9E;
+  --bs-btn-disabled-border-color: #A4AE9E;
+  box-shadow: 0px 17px 14px -9px rgba(0, 0, 0, 0.301);
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #A4AE9E;
+  --bs-btn-border-color: #7a8275;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #7a8275;
+  --bs-btn-hover-border-color: #A4AE9E;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #A4AE9E;
+  --bs-btn-active-border-color: #A4AE9E;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #A4AE9E;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #A4AE9E;
+  --bs-gradient: none;
+  box-shadow: 0px 10px 14px -9px rgba(0, 0, 0, 0.301);
+}
+
+
 .btn-primary:focus {
   color: white;
   background-color: #65a30d;
@@ -114,6 +151,33 @@ body{
 .btn-outline-primary:hover {
   box-shadow: 0px 30px 15px -9px rgba(0, 0, 0, 0.301);  
 }
+.btn-primary:hover {
+  box-shadow: 0px 30px 15px -9px rgba(0, 0, 0, 0.301);  
+}
+
+
+.btn-secondary:focus {
+  color: white;
+  background-color: #7a8275;
+  border-color: #7a8275;
+  box-shadow: 0 0 0 0.25rem #7a82758c!important;
+}
+
+.btn-outline-secondary:focus {
+  color: white;
+  background-color: #7a8275;
+  border-color: #7a8275;
+  box-shadow: 0 0 0 0.25rem #7a82758c!important;
+}
+
+.btn-primary:hover {
+  box-shadow: 0px 30px 15px -9px rgba(0, 0, 0, 0.301);  
+}
+
+.btn-outline-secondary:hover {
+  box-shadow: 0px 30px 15px -9px rgba(0, 0, 0, 0.301);  
+}
+
 
 /* -Input- */
 .box-input {
