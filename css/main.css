@@ -57,6 +57,10 @@ body{
   background: #72CC50 !important;
 }
 
+.bg-secondary {
+  background: #A4AE9E !important;
+}
+
 .text-color-primary {
   color: #72CC50 !important;
 }
