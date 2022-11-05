@@ -1922,7 +1922,7 @@ progress {
   opacity: 1;
 }
 .form-control:disabled {
-  background-color: #e9ecef;
+  background-color: #F2F2F2;
   opacity: 1;
 }
 .form-control::-webkit-file-upload-button {
@@ -5027,7 +5027,7 @@ fieldset:disabled .btn {
 }
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem #7a8275;
   opacity: 1;
 }
 .btn-close.disabled,
