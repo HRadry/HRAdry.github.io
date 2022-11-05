@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Detalles del usuario</title>
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/main.css" rel="stylesheet">
-    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/bootstrap-icons.css">
     <link rel="stylesheet" href="../../css/animate.min.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-nav sticky-top px-1">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../../img/forest.png" alt="" width="50px"></a>
+            <a class="navbar-brand" href="../menu.html"><img src="../../img/forest.png" alt="" width="50px"></a>
 
             <div class="dropdown column">
                 <div class="border-0 dropdown-toggle d-flex flex-row" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,13 +55,13 @@
     </nav>
 
 
-    <div class="container mt-5 col-lg-6 animate__animated animate__fadeIn">
+    <div class="container mt-3   col-lg-6 animate__animated animate__fadeIn">
         <div class="text-center mb-5">
             <h2 class="title-page">Detalles del marqueo</h2>
         </div>
-        <!-- Datos generales -->
+
         <h4 class="title-section">Datos generales</h4>
-        <div class="rounded border shadow-sm col-12">
+        <div class="rounded border shadow-sm mx-3">
             <div class="row border-bottom py-2 mx-0 bg-light rounded-top">
                 <div class="col-6 fw-bold">Anualidad:</div>
                 <div class="col-6 fw-light">2</div>
@@ -122,7 +122,7 @@
             </table>
         </section> -->
 
-        <div class="rounded border shadow-sm col-12 text-center">
+        <div class="rounded border shadow-sm text-center mx-3">
             <div class="row border-bottom py-2 mx-0 rounded-top tex">
                 <div class="col-6 fw-bold">Género</div>
                 <div class="col-6 fw-bold">Volumen</div>
@@ -135,39 +135,39 @@
                 <div class="col-6">Quercus:</div>
                 <div class="col-6">345 m</div>
             </div> 
-            <div class="row border-bottom py-2 mx-0  bg-light">
+            <div class="row py-2 mx-0  bg-light">
                 <div class="col-6">Alnus</div>
                 <div class="col-6">345 m</div>
             </div>           
         </div>
 
         <h4 class="title-section">Usuarios encargados del registro</h4>
-        <div class="shadow-sm rounded">
+        <div class="shadow-sm rounded mx-3">
             <ul class="list-group mb-3">
-                <li class="list-group-item bg-light">Adriana Hernandez</li>
-                <li class="list-group-item">Emmanuel Gracida</li>
-                <li class="list-group-item bg-light">Juan Ruiz</li>
+                <li class="border list-group-item bg-light">Adriana Hernandez</li>
+                <li class="border list-group-item">Emmanuel Gracida</li>
+                <li class="border list-group-item bg-light">Juan Ruiz</li>
             </ul>
         </div>
 
         <h4 class="title-section">Comentarios</h4>
-        <div class="mb-3">
-            <textarea disabled class="form-control bg-light" name="" id=""
+        <div class="mb-3 mx-3">
+            <textarea disabled class="border form-control bg-light" name="" id=""
                 rows="3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias neque, pariatur commodi quia a mollitia cumque fugit praesentium ea? Praesentium sapiente similique officiis ab dolorem ipsam aperiam inventore consequuntur placeat!</textarea>
         </div>
 
-        <div class="text-center my-5">
-            <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
+        <div class="text-center my-3">
+            <a href="../marqueos-programados/marqueos-programados.html" type="button" class="btn btn-lg btn-outline-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                     class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
                 </svg>
                 Regresar                
-            </button>
-            <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
+            </a>
+            <a href="../marqueos-programados/editar-marqueo.html" type="button" class="btn btn-lg btn-outline-primary">
                 Editar
-            </button>
+            </a>
         </div>
     </div>
 
