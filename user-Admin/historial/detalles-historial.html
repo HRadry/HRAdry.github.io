@@ -13,100 +13,122 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top px-1">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../../img/forest.png" alt="" width="50px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-color-nav" aria-current="page" href="#">Adriana Hernández</a>
+            <a class="navbar-brand" href="../menu.html"><img src="../../img/forest.png" alt="" width="50px"></a>
+
+            <div class="dropdown column">
+                <div class="border-0 dropdown-toggle d-flex flex-row" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="p-2">
+                        <img src="../../img/profile.svg" alt="" width="35px">
+                    </div>
+                    <div>
+                        <span class="fw-semibold m-0 small">Adriana Hernández</span class="fw-semibold">
+                        <br>
+                        <span class="small">Técnico</span>
+                    </div>
+                </div>
+                <ul class="dropdown-menu">
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person text-color-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                            Mi perfil
+                        </button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-color-nav" aria-current="page" href="#">Cerrar sesión</a>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-door-open text-color-primary" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
+                                <path
+                                    d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
+                            </svg>
+                            Cerrar sesión
+                        </button>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
-    <div class="container my-5 col-sm-12 col-lg-6">
-        <div class="text-center border-bottom mb-5">
-            <h2>Detalles del registro</h2>
+    <div class="container mt-3 col-sm-12 col-lg-6 animate__animated animate__fadeIn">
+        <div class="text-center mb-5">
+            <h2 class="title-page">Detalles</h2>
         </div>
-        <div class="card shadow">
-            <div class="card-header d-flex justify-content-between align-content-center bg-card text-white px-3">
-                <div class="d-flex align-items-center">
-                    <span class="card-title fs-5 fw-bold">Capulalpam</span>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                    <span class="fw-normal">23-08-2022</span>
-                    <span>07:00 a.m.</span>
-                </div>
+        <h4 class="title-section">Datos generales</h4>
+        <div class="rounded border mx-3">
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Fecha:</div>
+                <div class="col-6 fw-light">06/10/2022</div>
             </div>
-            <div class="d-flex flex-row bg-light m-0 p-2">
-                <div class="col-6 px-2">
-                    <span class="fw-bold">Rodal:</span>
-                </div>
-                <div class="col-6 ">
-                    <span class="">V-2a</span>
-                </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Comunidad:</div>
+                <div class="col-6 fw-light">Capulalpam</div>
             </div>
-            <div class="d-flex flex-row m-0 p-2">
-                <div class="col-6 px-2">
-                    <span class="fw-bold">Superficie:</span>
-                </div>
-                <div class="col-6 ">
-                    <span class="">5.02</span>
-                </div>
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Rodal:</div>
+                <div class="col-6 fw-light">IV-2a</div>
             </div>
-            <div class="d-flex flex-row bg-light m-0 p-2">
-                <div class="col-6 px-2">
-                    <span class="fw-bold">Tratamiento:</span>
-                </div>
-                <div class="col-6 ">
-                    <span class="">PACL</span>
-                </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Subrodal:</div>
+                <div class="col-6 fw-light">Zona libre</div>
             </div>
-            <div class="d-flex flex-row m-0 p-2">
-                <div class="col-6 px-2">
-                    <span class="fw-bold">Género:</span>
-                </div>
-                <div class="col-6 ">
-                    <span class="">Pinus, Quercus, Alnus</span>
-                </div>
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Tratamiento:</div>
+                <div class="col-6 fw-light">PACL</div>
             </div>
-            <div class="d-flex flex-row bg-light m-0 p-2">
-                <div class="col-6 px-2">
-                    <span class="fw-bold">Numero de árboles marcados:</span>
-                </div>
-                <div class="col-6 ">
-                    <span class="">54</span>
-                </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Superficie:</div>
+                <div class="col-6 fw-light">Xiacui</div>
             </div>
-            <div class="d-flex flex-row m-0 p-2">
-                <div class="col-6 px-2">
-                    <span class="fw-bold">Volumen máximo permitido:</span>
-                </div>
-                <div class="col-6 ">
-                    <span class="">248.7m³</span>
-                </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Numero de arboles marcados:</div>
+                <div class="col-6 fw-light">Xiacui</div>
             </div>
-            <div class="d-flex flex-row bg-light m-0 p-2">
-                <div class="col-6 px-2">
-                    <span class="fw-bold">Volumen marcado:</span>
-                </div>
-                <div class="col-6 ">
-                    <span class="">248.7m³</span>
-                </div>
+            <div class="row border-bottom py-2 mx-0 rounded-bottom">
+                <div class="col-6 fw-bold">Volumen máximo</div>
+                <div class="col-6 fw-light">233</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Volumen marcado:</div>
+                <div class="col-6 fw-light">Xiacui</div>
             </div>
         </div>
 
+        <h4 class="title-section">Género y volumen</h4>
+        <section class="table-responsive-sm my-1 text-center border rounded mx-3">
+            <table class="table table table-striped mb-0">
+                <thead>
+                    <tr>
+                        <th>Género</th>
+                        <th>Volumen máximo</th>
+                        <th>Volumen marcado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pinus</td>
+                        <td>248.703283638359 m³</td>
+                        <td>23423 m³</td>
+                    </tr>
+                    <tr>
+                        <td>Querus</td>
+                        <td>21.980112142104 m³</td>
+                        <td>23423 m³</td>
+                    </tr>
+                    <tr>
+                        <td>Alnus</td>
+                        <td>12.0229627041934 m³</td>
+                        <td>23423 m³</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
 
         <!-- <div class="row mb-4 shadow">
@@ -134,9 +156,11 @@
             <table id="example" class="table table-striped table-hover display">
                 <thead>
                     <tr>
+                        <th hidden>Comunidad</th>
                         <th hidden>Rodal</th>
-                        <th hidden>Superficie</th>
                         <th hidden>Tratamiento</th>
+                        <th hidden>Superficie</th>
+                        <th hidden>Volumen marcado</th>
                         <th class="find">Responsable</th>
                         <th class="find">Género</th>
                         <th class="find">Especie</th>
@@ -149,9 +173,11 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <td hidden>Capulalpam</td>
                         <td hidden>IV-a</td>
-                        <td hidden>231</td>
                         <td hidden>PACL</td>
+                        <td hidden>231</td>
+                        <td hidden>123 m</td>                        
                         <td>Adriana Hernández</td>
                         <td>Pinus</td>
                         <td>Pinus pátula</td>
@@ -159,127 +185,8 @@
                         <td>6 </td>
                         <td>74</td>
                         <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-primary rounded-pill p-2" data-bs-toggle="modal" data-bs-target="#edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
-                                </svg>
-                            </a>
-                        </td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-danger rounded-pill p-2"
-                                data-bs-toggle="modal" data-bs-target="#modalDelete">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
-                                </svg>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td hidden>IV-a</td>
-                        <td hidden>231</td>
-                        <td hidden>PACL</td>
-                        <td>Adriana Hernández</td>
-                        <td>Pinus</td>
-                        <td>Pinus pátula</td>
-                        <td>12 </td>
-                        <td>6 </td>
-                        <td>74</td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-primary rounded-pill p-2" data-bs-toggle="modal" data-bs-target="#edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
-                                </svg>
-                            </a>
-                        </td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-danger rounded-pill p-2"
-                                data-bs-toggle="modal" data-bs-target="#modalDelete">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
-                                </svg>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td hidden>IV-a</td>
-                        <td hidden>231</td>
-                        <td hidden>PACL</td>
-                        <td>Adriana Hernández</td>
-                        <td>Pinus</td>
-                        <td>Pinus pátula</td>
-                        <td>12 </td>
-                        <td>6 </td>
-                        <td>74</td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-primary rounded-pill p-2" data-bs-toggle="modal" data-bs-target="#edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
-                                </svg>
-                            </a>
-                        </td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-danger rounded-pill p-2"
-                                data-bs-toggle="modal" data-bs-target="#modalDelete">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
-                                </svg>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td hidden>IV-a</td>
-                        <td hidden>231</td>
-                        <td hidden>PACL</td>
-                        <td>Adriana Hernández</td>
-                        <td>Pinus</td>
-                        <td>Pinus pátula</td>
-                        <td>12 </td>
-                        <td>6 </td>
-                        <td>74</td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-primary rounded-pill p-2" data-bs-toggle="modal" data-bs-target="#edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
-                                </svg>
-                            </a>
-                        </td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-danger rounded-pill p-2"
-                                data-bs-toggle="modal" data-bs-target="#modalDelete">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
-                                </svg>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td hidden>IV-a</td>
-                        <td hidden>231</td>
-                        <td hidden>PACL</td>
-                        <td>Adriana Hernández</td>
-                        <td>Pinus</td>
-                        <td>Pinus pátula</td>
-                        <td>12 </td>
-                        <td>6 </td>
-                        <td>74</td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-primary rounded-pill p-2" data-bs-toggle="modal" data-bs-target="#edit">
+                            <a href="" type="button" class="btn btn-outline-primary rounded-pill p-2"
+                                data-bs-toggle="modal" data-bs-target="#edit">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                     class="bi bi-pencil-fill" viewBox="0 0 16 16">
                                     <path
@@ -302,44 +209,48 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td hidden></td>
-                        <td hidden></td>
-                        <td hidden></td>
-                        <td>Responsable</td>
-                        <td>Género</td>
-                        <td>Especie</td>
-                        <td style="text-align:right">Total:</td>
-                        <td></td>
-                        <td></td>
+                        <td hidden>Comunidad</td>
+                        <td hidden>Rodal</td>
+                        <td hidden>Tratamiento</td>
+                        <td hidden>Superficie</td>
+                        <td hidden>Volumen marcado</td>
+                        <td class="find">Responsable</td>
+                        <td class="find">Género</td>
+                        <td class="find">Especie</td>
+                        <td>Diámetro</td>
+                        <td>Altura</td>
+                        <td>Volumen</td>
+                        <td>Editar</td>
+                        <td>Eliminar</td>
 
                     </tr>
                 </tfoot>
             </table>
         </section>
 
-        <div class="text-center my-3">
-            <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
+        <div class="text-center mb-3 mt-5">
+            <a href="../historial/hitorial-registro.html" type="button" class="btn btn-lg btn-outline-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                     class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
                 </svg>
                 <span>Regresar</span>
-            </button>
+            </a>
         </div>
     </div>
 
     <!-- Modal de confirmación Borrar registro -->
     <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="border: solid 3px red">
+            <div class="modal-content modal-danger">
                 <div class="modal-header text-center">
 
-                    <h5 class="modal-title text-danger" id="exampleModalLabel">Borrar registro</h5>
+                    <h5 class="modal-title text-danger" id="exampleModalLabel">Eliminar registro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body d-flex flex-row justify-content-around">
-                    <div class="p-2">
+                    <div class="p-2 text-danger">
                         <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
                             class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
                             <path
@@ -354,9 +265,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">No, deseo
-                        conservarlo</button>
-                    <button type="button" class="btn btn-danger">Sí, deseo eliminarlo</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
                 </div>
             </div>
         </div>
@@ -368,21 +278,21 @@
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-primary text-white">
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar registro</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
+                        <h6 class="title-section">Responsable</h6>
                         <div class="mb-3">
-                            <label for="responsable" class="form-label">Responsable</label>
-                            <input disabled type="text" id="responsable" class="form-control" placeholder=""
+                            <input disabled type="text" id="responsable" class="form-control box-input" placeholder=""
                                 value="Adriana Hernández Ramírez">
                         </div>
                         <div class="row">
                             <div class="mb-3 col-md-6 col-lg-6">
-                                <label for="responsable" class="form-label">Género</label>
-                                <select class="form-select shadow-sm" id="floatingSelect"
+                                <h6 class="title-section">Género</h6>
+                                <select class="form-select box-input" id="floatingSelect"
                                     aria-label="Floating label select example">
                                     <option selected>Selecciona una opción</option>
                                     <option value="1">IV-2a</option>
@@ -392,8 +302,8 @@
                                 </select>
                             </div>
                             <div class="mb-3 col-md-6 col-lg-6">
-                                <label for="responsable" class="form-label">Especie</label>
-                                <select class="form-select shadow-sm" id="floatingSelect"
+                                <h6 class="title-section">Especie</h6>
+                                <select class="form-select box-input" id="floatingSelect"
                                     aria-label="Floating label select example">
                                     <option selected>Selecciona una opción</option>
                                     <option value="1">IV-2a</option>
@@ -403,32 +313,34 @@
                                 </select>
                             </div>
                         </div>
-            
-                        <div class="row">
+
+                        <h6 class="title-section">Medidas</h6>
+                        <div class="row mx-3">
                             <div class="col-lg-4">
                                 <label for="responsable" class="form-label">Diámetro</label>
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" value="12">
-                                    <span class="input-group-text">cm</span>
+                                    <input type="text" class="form-control box-input" value="12">
+                                    <span class="input-group-text box-input">cm</span>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <label for="responsable" class="form-label">Altura</label>
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" value="5">
-                                    <span class="input-group-text">m</span>
+                                    <input type="text" class="form-control box-input" value="5">
+                                    <span class="input-group-text box-input">m</span>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <label for="responsable" class="form-label">Volumen</label>
                                 <div class="input-group mb-3">
-                                    <input disabled type="text" class="form-control" value="3121">
-                                    <span class="input-group-text">m</span>
+                                    <input disabled type="text" class="form-control box-input" value="3121">
+                                    <span class="input-group-text box-input">m</span>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
+            
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn btn-primary">Guardar cambios</button>
@@ -492,17 +404,24 @@
         }
         $(document).ready(function () {
             var table = $('#example').DataTable({
-                dom: "<'row mb-4' <'col-12 col-md-6'<'dt-buttons btn-group flex-wrap'B><'dt-buttons btn-group flex-wrap'>><'col-12 col-md-6'f>>" +
-                    "<'row' <'col-12'tr>>" +
-                    "<'row' <'col-12 col-md-5'i> <'col-12 col-md-7'p >>",
+                // dom: 'Bfrtilp',
+                dom:"<'d-flex flex-row justify-content-around py-3 col-12' <'dt-buttons btn-group flex-wrap col-5'B> <'col-5'f>  >" ,
+                          
 
-                buttons: ['excel'], //'copy','colvis',
+                buttons: [
+                    {
+                        responsive: true,
+                        extend: 'excelHtml5',
+                        text: '<img src="/img/excel.png" alt="" width="20px">',
+                        titleAttr:'Exportar a excel'
+                    }
+                ], //'copy','colvis',
                 "order": [
                     [1, "asc"]
                 ],
                 'columnDefs': [{
                     "width": "auto",
-                    "targets": [9, 10],
+                    "targets": [11,12],
                     "orderable": false,
                 }],
 

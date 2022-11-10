@@ -5,627 +5,238 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Historial de registro</title>
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/main.css" rel="stylesheet">
-    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/dataTables.min.css">
+    <link rel="stylesheet" href="../../css/animate.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-nav sticky-top">
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top px-1">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../../img/forest.png" alt="" width="50px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-color-nav" aria-current="page" href="#">Adriana Hernández</a>
+            <a class="navbar-brand" href="../menu.html"><img src="../../img/forest.png" alt="" width="50px"></a>
+
+            <div class="dropdown column">
+                <div class="border-0 dropdown-toggle d-flex flex-row" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="p-2">
+                        <img src="../../img/profile.svg" alt="" width="35px">
+                    </div>
+                    <div>
+                        <span class="fw-semibold m-0 small">Adriana Hernández</span class="fw-semibold">
+                        <br>
+                        <span class="small">Técnico</span>
+                    </div>
+                </div>
+                <ul class="dropdown-menu">
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person text-color-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                            Mi perfil
+                        </button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-color-nav" aria-current="page" href="#">Cerrar sesión</a>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-door-open text-color-primary" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
+                                <path
+                                    d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
+                            </svg>
+                            Cerrar sesión
+                        </button>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
-    <!-- <nav class="mt-4  rounded p-3">
-        <ol class="breadcrumb m-auto">
-            <li class="breadcrumb-item active" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                title="Te encuentras aquí"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
-                    <path
-                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
-                </svg><span class="px-1">Menú</span>
-            </li>
-        </ol>
-    </nav>-->
+    <div class="container mt-3 col-sm-12 col-lg-6 animate__animated animate__fadeIn">
+        <div class="text-center mb-5">
+            <h2 class="title-page">Historial de registro</h2>
+        </div>
+        <nav class="mb-3">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-first-tab" data-bs-toggle="tab" data-bs-target="#nav-first"
+                    type="button" role="tab" aria-controls="nav-first" aria-selected="true">Anualidad en curso</button>
 
-    <div class="container my-5">
-        <div class="mx-4 mx-sm-auto d-flex flex-column gap-5 justify-content-center  md-auto col-lg-6 lg:p-x-4">
+                <button class="nav-link" id="nav-second-tab" data-bs-toggle="tab" data-bs-target="#nav-second"
+                    type="button" role="tab" aria-controls="nav-second" aria-selected="false">Todas las
+                    anualidades</button>
+            </div>
+        </nav>
 
-            <div class="d-flex flex-column justify-content-center">
-                <h1 class="text-center fw-semibold  m-0">Historial de registro</h1>
+        <div class="tab-content" id="nav-tabContent">
+            <!-- First panel -->
+            <div class="tab-pane fade show active" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab">
+                <section class="table-responsive-sm p-1 mt-4">
+                    <table id="historial-1" class="table table-striped table-hover align-middle display text-center"
+                        style="width:100%">
+                        <thead class="thead-style text-center">
+                            <tr>
+                                <th colspan="8">
+                                    <h6>Anualidad en curso : 2</h6>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="find">Fecha-Hora</th>
+                                <th class="find">Comunidad</th>
+                                <th class="find">Rodal</th>
+                                <th class="find">Tratamiento</th>
+                                <th>Detalles</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>07/10/2022-07:00 a.m</td>
+                                <td>Xiacui</td>
+                                <td>IV-2a</td>
+                                <td>PACL</td>
+                                <!-- <td> <span class="badge bg-primary p-2">En proceso</span></td> -->
+                                <td class="text-center">
+                                    <a href="../historial/detalles-historial.html" type="button"
+                                        class="btn btn-details rounded-pill p-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                                            <path
+                                                d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="" type="button" class="btn btn-delete rounded-pill p-2"
+                                        data-bs-toggle="modal" data-bs-target="#modalDelete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+                                        </svg>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>Fecha-Hora</td>
+                            <td>Comunidad</td>
+                            <td>Rodal</td>
+                            <td>Tratamiento</td>
+                            <td>Detalles</td>
+                            <td>Eliminar</td>
+                        </tfoot>
+                    </table>
+                </section>
             </div>
 
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-first-tab" data-bs-toggle="tab" data-bs-target="#nav-first"
-                        type="button" role="tab" aria-controls="nav-first" aria-selected="true">Rodal</button>
+            <!-- Second panel -->
+            <div class="tab-pane" id="nav-second" role="tabpanel" aria-labelledby="nav-first-tab">
+                <section class="table-responsive-sm p-1 mt-4">
+                    <table id="historial-2" class="table table-striped table-hover align-middle display text-center"
+                        style="width:100%">
+                        <thead class="thead-style text-center">
+                            <tr>
+                                <th class="find">Anualidad</th>
+                                <th class="find">Fecha-Hora</th>
+                                <th class="find">Comunidad</th>
+                                <th class="find">Rodal</th>
+                                <th class="find">Tratamiento</th>
+                                <th>Detalles</th>
+                                <th>Eliminar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>07/10/2022-07:00 a.m</td>
+                                <td>Xiacui</td>
+                                <td>IV-2a</td>
+                                <td>PACL</td>
+                                <td class="text-center">
+                                    <a href="../historial/detalles-historial.html" type="button"
+                                        class="btn btn-details rounded-pill p-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+                                            <path
+                                                d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z" />
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="" type="button" class="btn btn-delete rounded-pill p-2"
+                                        data-bs-toggle="modal" data-bs-target="#modalDelete">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+                                        </svg>
+                                    </a>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>Anualidad</td>
+                            <td>Fecha-Hora</td>
+                            <td>Comunidad</td>
+                            <td>Rodal</td>
+                            <td>Tratamiento</td>
+                            <td>Detalles</td>
+                            <td>Eliminar</td>
+                        </tfoot>
+                    </table>
+                </section>
+            </div>
+            <!-- Botón regresar -->
+            <div class="text-center my-3">
+                <a href="../menu.html" type="button" class="btn btn-lg btn-outline-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                    </svg>
+                    <span>Regresar</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
-                    <button class="nav-link" id="nav-second-tab" data-bs-toggle="tab" data-bs-target="#nav-second"
-                        type="button" role="tab" aria-controls="nav-second" aria-selected="false">Todo</button>
+    <!-- Modal confirmacion borrar marqueo -->
+    <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-danger">
+                <div class="modal-header text-center">
+
+                    <h5 class="modal-title text-danger" id="exampleModalLabel">Eliminar registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </nav>
-
-            <div class="tab-content" id="nav-tabContent">
-                <!-- First panel -->
-                <div class="tab-pane fade show active" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab">
-                    <div class="d-flex flex-column gap-5">
-                        <div class="d-flex flex-row gap-1">
-                            <form class="box-search d-flex flex-row col-lg-10 col-md-10 col-8">
-                                <label for="docsearch-input" id="docsearch-label">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                        class="bi bi-search" viewBox="0 0 16 16">
-                                        <path
-                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                                    </svg>
-                                </label>
-                                <input class="DocSearch-Input" placeholder="Buscar" type="search">
-                            </form>
-                            <div class="d-flex flex-row col-lg-2 col-md-2 col-4">
-                                <button class="btn btn-filter m-0" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-sliders my-2 mx-0" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
-                                    </svg>
-                                    <span class="py-1">Filtrar</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="offcanvas offcanvas-end box-filter" tabindex="-1" id="offcanvasRight"
-                            aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Filtrar por</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <div class="accordion" id="accordionPanelsStayOpenExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelsStayOpen-headingZero">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseZero"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseZero">
-                                                Comunidad
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseZero" class="accordion-collapse collapse"
-                                            aria-labelledby="panelsStayOpen-headingZero">
-                                            <div class="accordion-body">
-                                                <input type="checkbox" class="my-2"><span> La trinidad </span><br>
-                                                <input type="checkbox" class="my-2"><span> Xiacui </span><br>
-                                                <input type="checkbox" class="my-2"><span> Capulalpam </span><br>
-                                                <input type="checkbox" class="my-2"><span> Comaltepec </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                                                Fecha
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
-                                            aria-labelledby="panelsStayOpen-headingOne">
-                                            <div class="accordion-body">
-                                                <input type="checkbox" class="my-2"><span> Un mes atrás</span><br>
-                                                <input type="checkbox" class="my-2"><span> Tres meses atrás </span><br>
-                                                <input type="checkbox" class="my-2"><span> Seis meses atrás </span><br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                                Anualidad
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="panelsStayOpen-headingTwo">
-                                            <div class="accordion-body">
-                                                <input type="checkbox"><span> 1 </span><br>
-                                                <input type="checkbox"><span> 2 </span><br>
-                                                <input type="checkbox"><span> 3 </span><br>
-                                                <input type="checkbox"><span> 4 </span><br>
-                                                <input type="checkbox"><span> 5 </span><br>
-                                                <input type="checkbox"><span> 6 </span><br>
-                                                <input type="checkbox"><span> 7 </span><br>
-                                                <input type="checkbox"><span> 8 </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                                Rodal
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
-                                            aria-labelledby="panelsStayOpen-headingThree">
-                                            <div class="accordion-body">
-                                                <input type="checkbox"><span> IV-2a </span><br>
-                                                <input type="checkbox"><span> IV-5a </span><br>
-                                                <input type="checkbox"><span> IV-2b </span><br>
-                                                <input type="checkbox"><span> IV-1 </span><br>
-                                                <input type="checkbox"><span> IV-7 </span><br>
-                                                <input type="checkbox"><span> IV-5b </span><br>
-                                                <input type="checkbox"><span> I-3a </span><br>
-                                                <input type="checkbox"><span> I-3b </span><br>
-                                                <input type="checkbox"><span> I-2 </span><br>
-                                                <input type="checkbox"><span> IV-4a </span><br>
-                                                <input type="checkbox"><span> IV-6a </span><br>
-                                                <input type="checkbox"><span> IV-2b </span><br>
-                                                <input type="checkbox"><span> IV-6b </span><br>
-                                                <input type="checkbox"><span> IV-1 </span><br>
-                                                <input type="checkbox"><span> IV-4b </span><br>
-                                                <input type="checkbox"><span> ... </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                                                Superficie
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
-                                            aria-labelledby="panelsStayOpen-headingFour">
-                                            <div class="accordion-body">
-                                                <input type="checkbox"><span> ... </span><br>
-                                                <input type="checkbox"><span> ... </span><br>
-                                                <input type="checkbox"><span> ... </span><br>
-                                                <input type="checkbox"><span> ... </span><br>
-                                                <input type="checkbox"><span> ... </span><br>
-                                                <input type="checkbox"><span> ... </span><br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                                                Tratamiento
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
-                                            aria-labelledby="panelsStayOpen-headingFive">
-                                            <div class="accordion-body">
-                                                <input type="checkbox"><span> PACL </span><br>
-                                                <input type="checkbox"><span> 1ACL </span><br>
-                                                <input type="checkbox"><span> 2ACL </span><br>
-                                                <input type="checkbox"><span> 3ACL </span><br>
-                                                <input type="checkbox"><span> CRM </span><br>
-                                                <input type="checkbox"><span> ENTRESACAS </span><br>
-                                                <input type="checkbox"><span> CRSG </span><br>
-                                                <input type="checkbox"><span> ... </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-                                                Género
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
-                                            aria-labelledby="panelsStayOpen-headingSix">
-                                            <div class="accordion-body">
-                                                <input type="checkbox"><span> Pinus </span><br>
-                                                <input type="checkbox"><span> Quercus </span><br>
-                                                <input type="checkbox"><span> Alnus </span><br>
-                                                <input type="checkbox"><span> Clethra </span><br>
-                                                <input type="checkbox"><span> Persea </span><br>
-                                                <input type="checkbox"><span> Oreopanax </span><br>
-                                                <input type="checkbox"><span> Arbutus </span><br>
-                                                <input type="checkbox"><span> Fraxinus </span><br>
-                                                <input type="checkbox"><span> ... </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card shadow mb-2">
-                            <div
-                                class="card-header d-flex justify-content-between align-content-center bg-card text-white px-3">
-                                <div class="d-flex align-items-center">
-                                    <span class="card-title fs-5 fw-bold">Capulalpam</span>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <span class="fw-normal">23-08-2022</span>
-                                    <span>07:00 a.m.</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Anualidad:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">1</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row  m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Rodal:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">V-2a</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Superficie:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">5.02</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Tratamiento:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">PACL</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Género:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">Pinus, Quercus, Alnus</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Volumen:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">248.7m³</span>
-                                </div>
-                            </div>
-                            <div class="text-end m-2">
-                                <button type="button" href="formulario-registro.html" class="btn btn-card">
-                                    <span>Detalles</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card shadow mb-2">
-                            <div
-                                class="card-header d-flex justify-content-between align-content-center bg-card text-white px-3">
-                                <div class="d-flex align-items-center">
-                                    <span class="card-title fs-5 fw-bold">Capulalpam</span>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <span class="fw-normal">23-08-2022</span>
-                                    <span>07:00 a.m.</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Anualidad:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">1</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row  m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Rodal:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">V-2a</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Superficie:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">5.02</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Tratamiento:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">PACL</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Género:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">Pinus, Quercus, Alnus</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Volumen:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">248.7m³</span>
-                                </div>
-                            </div>
-                            <div class="text-end m-2">
-                                <button type="button" href="../../formulario-registro.html" class="btn btn-card">
-                                    <span>Detalles</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card shadow mb-2">
-                            <div
-                                class="card-header d-flex justify-content-between align-content-center bg-card text-white px-3">
-                                <div class="d-flex align-items-center">
-                                    <span class="card-title fs-5 fw-bold">Capulalpam</span>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <span class="fw-normal">23-08-2022</span>
-                                    <span>07:00 a.m.</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Anualidad:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">1</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row  m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Rodal:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">V-2a</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Superficie:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">5.02</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Tratamiento:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">PACL</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Género:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">Pinus, Quercus, Alnus</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Volumen:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">248.7m³</span>
-                                </div>
-                            </div>
-                            <div class="text-end m-2">
-                                <button type="button" href="formulario-registro.html" class="btn btn-card">
-                                    <span>Detalles</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="card shadow mb-2">
-                            <div
-                                class="card-header d-flex justify-content-between align-content-center bg-card text-white px-3">
-                                <div class="d-flex align-items-center">
-                                    <span class="card-title fs-5 fw-bold">Capulalpam</span>
-                                </div>
-                                <div class="d-flex flex-column align-items-center">
-                                    <span class="fw-normal">23-08-2022</span>
-                                    <span>07:00 a.m.</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Anualidad:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">1</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row  m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Rodal:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">V-2a</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Superficie:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">5.02</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Tratamiento:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">PACL</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex flex-row bg-light m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Género:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">Pinus, Quercus, Alnus</span>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row m-0 p-2">
-                                <div class="col-6 px-2">
-                                    <span class="fw-bold">Volumen:</span>
-                                </div>
-                                <div class="col-6 ">
-                                    <span class="">248.7m³</span>
-                                </div>
-                            </div>
-                            <div class="text-end m-2">
-                                <button type="button" href="formulario-registro.html" class="btn btn-card">
-                                    <span>Detalles</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
+                <div class="modal-body d-flex flex-row justify-content-around">
+                    <div class="p-2 text-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                            <path
+                                d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                            <path
+                                d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <p class="fw-semibold">¿Deseas eliminar este registro?</p>
+                        <span class="small text-gray">Esta acción no se podrá deshacer</span>
                     </div>
                 </div>
-
-                <!-- Second panel -->
-                <div class="tab-pane" id="nav-second" role="tabpanel" aria-labelledby="nav-first-tab">
-                    <section class="table-responsive-sm mt-3">
-                        <table id="example" class="table table-striped table-hover align-middle display"
-                            style="width:100%">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th hidden>Responsable</th>
-                                    <th hidden>Fecha de registro</th>
-                                    <th hidden>Diámetro</th>
-                                    <th hidden>Altura</th>
-                                    <th hidden>Volumen</th>
-                                    <th class="find">Anualidad</th>
-                                    <th class="find">Comunidad</th>
-                                    <th class="find">Rodal</th>
-                                    <th class="find">Superficie</th>
-                                    <th class="find">Tratamiento</th>
-                                    <th class="find">Especie</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="dt-control text-center"><svg xmlns="http://www.w3.org/2000/svg"
-                                            width="20" height="20" fill="currentColor" class="bi bi-info-circle"
-                                            viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                            <path
-                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                                        </svg>
-                                    </td>
-                                    <td hidden>Adriana Hernandez</td>
-                                    <td hidden>09/10/2022</td>
-                                    <td hidden>11 cm</td>
-                                    <th hidden>4 m</th>
-                                    <td hidden>232</td>
-                                    <td>1</td>
-                                    <td>Xiacui</td>
-                                    <td>IV-2a</td>
-                                    <td>5.02</td>
-                                    <td>PACL</td>
-                                    <td>Pinus pátula</td>
-                                </tr>
-                                
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th></th>
-                                    <th hidden>Responsable</th>
-                                    <th hidden>Fecha de registro</th>
-                                    <th hidden>Diámetro</th>
-                                    <th hidden>Altura</th>
-                                    <th hidden>Volumen</th>
-                                    <th>Anualidad</th>
-                                    <th>Comunidad</th>
-                                    <th>Rodal</th>
-                                    <th>Superficie</th>
-                                    <th>Tratamiento</th>
-                                    <th>Especie</th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </section>
-                </div>
-                <!-- Botón regresar -->
-                <div class="text-center mt-5">
-                    <button href="#" type="submit" class="btn btn-lg btn-outline-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" widtd="30" height="30" fill="currentColor"
-                            class="bi bi-arrow-left-short" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
-                        </svg>
-                        <span>Regresar</span>
-                    </button>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- /Modal confirmacion borrar marqueo -->
+
+    
 
 
     <script src="../../js/bootstrap.bundle.min.js"></script>
@@ -646,50 +257,18 @@
     <script src="../../js/export-data/buttons.colVis.min.js"></script>
     <script>
         /* Formatting function for row details - modify as you need */
-        function format(d) {
-            // `d` is the original data object for the row
-            return (
-                '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
-                '<tr>' +
-                '<td>Fecha de registro:</td>' +
-                '<td>' +
-                "30/09/2022" +
-                '</td>' +
-                '</tr>' +
-                '<tr>' +
-                '<td>Responsable:</td>' +
-                '<td>' +
-                "Adriana Hernández Ramírez" +
-                '</td>' +
-                '</tr>' +
-                '<tr>' +
-                '<td>Diámetro:</td>' +
-                '<td>12 cm</td>' +
-                '</tr>' +
-                '<tr>' +
-                '<td>Altura:</td>' +
-                '<td>5 m</td>' +
-                '</tr>' +
-                '<tr>' +
-                '<td>Volumen:</td>' +
-                '<td>23 m</td>' +
-                '</tr>' +
-                '</table>'
-            );
-        }
-        $(document).ready(function () {
-            var table = $('#example').DataTable({
-                dom: "<'row mb-4' <'col-12 col-md-6'<'dt-buttons btn-group flex-wrap'B><'dt-buttons btn-group flex-wrap'>><'col-12 col-md-6'f>>" +
-                    "<'row' <'col-12'tr>>" +
-                    "<'row' <'col-12 col-md-5'i> <'col-12 col-md-7'p >>",
 
-                buttons: ['excel'], //'copy','colvis',
+        $(document).ready(function () {
+            var table1 = $('#historial-1').DataTable({
+                language: {
+                    url: "../../json/dataTableSpanishLanguage.json",
+                },
                 "order": [
-                    [1, "asc"]
+                    [0, "asc"]
                 ],
                 'columnDefs': [{
                     "width": "auto",
-                    "targets": [6,7,8,9,10,11],
+                    "targets": [4, 5],
                     "orderable": false,
                 }],
 
@@ -715,38 +294,43 @@
                                 });
                         });
                 },
+            });
+
+            var table2 = $('#historial-2').DataTable({
                 language: {
                     url: "../../json/dataTableSpanishLanguage.json",
                 },
-                responsive: true,
-                // scrollY: '200px',
-                // scrollCollapse: true
+                "order": [
+                    [0, "asc"]
+                ],
+                'columnDefs': [{
+                    "width": "auto",
+                    "targets": [5, 6],
+                    "orderable": false,
+                }],
 
-            });
+                initComplete: function () {
+                    this.api()
+                        .columns('.find')
+                        .every(function () {
+                            var column = this;
+                            var select = $('<select class="form-select" aria-label="Default select example"><option value="">Todo</option></select>')
+                                .appendTo($(column.footer()).empty())
+                                .on('change', function () {
+                                    var val = $.fn.dataTable.util.escapeRegex($(this).val());
 
-            // Add event listener for opening and closing details
-            $('#example tbody').on('click', 'td.dt-control', function () {
-                var tr = $(this).closest('tr');
-                var row = table.row(tr);
+                                    column.search(val ? '^' + val + '$' : '', true, false).draw();
+                                });
 
-                if (row.child.isShown()) {
-                    // This row is already open - close it
-                    row.child.hide();
-                    tr.removeClass('shown');
-                    this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">' +
-                        '<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>' +
-                        '<path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>' +
-                        '</svg>'
-
-                } else {
-                    // Open this row
-                    row.child(format(row.data())).show();
-                    tr.addClass('shown');
-                    this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">' +
-                        '<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />' +
-                        '</svg >'
-
-                }
+                            column
+                                .data()
+                                .unique()
+                                .sort()
+                                .each(function (d, j) {
+                                    select.append('<option value="' + d + '">' + d + '</option>');
+                                });
+                        });
+                },
             });
         });
     </script>
