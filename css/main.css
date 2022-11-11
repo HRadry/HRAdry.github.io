@@ -67,6 +67,13 @@ body{
   padding: 15px;
 }
 
+.br-box {
+  background-color: white;
+  border: solid white 2px;
+  border-radius: 15px;
+}
+
+
 .bg-primary {
   background: #72CC50 !important;
 }
