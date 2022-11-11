@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detalles registro</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="../../css/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top px-1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../menu.html"><img src="../../img/forest.png" alt="" width="50px"></a>
+
+            <div class="dropdown column">
+                <div class="border-0 dropdown-toggle d-flex flex-row" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="p-2">
+                        <img src="../../img/profile.svg" alt="" width="35px">
+                    </div>
+                    <div>
+                        <span class="fw-semibold m-0 small">Adriana Hernández</span class="fw-semibold">
+                        <br>
+                        <span class="small">Técnico</span>
+                    </div>
+                </div>
+                <ul class="dropdown-menu">
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person text-color-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                            Mi perfil
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-door-open text-color-primary" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
+                                <path
+                                    d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
+                            </svg>
+                            Cerrar sesión
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3 col-sm-12 col-lg-6 animate__animated animate__fadeIn">
+        <div class="text-center mb-5">
+            <h2 class="title-page">Detalles</h2>
+        </div>
+        <h4 class="title-section">Datos generales</h4>
+        <div class="rounded border mx-3">
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Fecha:</div>
+                <div class="col-6 fw-light">06/10/2022</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Comunidad:</div>
+                <div class="col-6 fw-light">Capulalpam</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Rodal:</div>
+                <div class="col-6 fw-light">IV-2a</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Subrodal:</div>
+                <div class="col-6 fw-light">Zona libre</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Tratamiento:</div>
+                <div class="col-6 fw-light">PACL</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Superficie:</div>
+                <div class="col-6 fw-light">Xiacui</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Numero de arboles marcados:</div>
+                <div class="col-6 fw-light">Xiacui</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 rounded-bottom">
+                <div class="col-6 fw-bold">Volumen máximo</div>
+                <div class="col-6 fw-light">233</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Volumen marcado:</div>
+                <div class="col-6 fw-light">Xiacui</div>
+            </div>
+        </div>
+
+        <h4 class="title-section">Género y volumen</h4>
+        <section class="table-responsive-sm my-1 text-center border rounded mx-3">
+            <table class="table table table-striped mb-0">
+                <thead>
+                    <tr>
+                        <th>Género</th>
+                        <th>Volumen máximo</th>
+                        <th>Volumen marcado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pinus</td>
+                        <td>248.703283638359 m³</td>
+                        <td>23423 m³</td>
+                    </tr>
+                    <tr>
+                        <td>Querus</td>
+                        <td>21.980112142104 m³</td>
+                        <td>23423 m³</td>
+                    </tr>
+                    <tr>
+                        <td>Alnus</td>
+                        <td>12.0229627041934 m³</td>
+                        <td>23423 m³</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- <div class="row mb-4 shadow">
+                <div class="d-flex d-none d-xl-block">
+                    <div class="col-lg-6">
+                        <p class="fw-bold">Fechadwd:<br> <span class="fw-light text-color-card">23/08/2022</span>
+                        </p>
+                        <p class="fw-bold">Hora:<br> <span class="fw-light text-color-card">07:00
+                                a.m.</span></p>
+                        <p class="fw-bold">Anualidad:<br> <span class="fw-light text-color-card">1</span></p>
+                        <p class="fw-bold">Rodal: <br><span class="fw-light  text-color-card">IV-2a</span></p>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <p class="fw-bold">Superficie:<br> <span class="fw-light ">5.02</span></p>
+                        <p class="fw-bold">Tratamiento: <br><span class="fw-light text-color-card">PACL</span>
+                        </p>
+                        <p class="fw-bold">Género:<br> <span class="fw-light text-color-card">Pinus</span></p>
+                        <p class="fw-bold">Volumen:<br> <span class="fw-light text-color-card">248.7032</span>
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
+        <section class="table-responsive-sm p-1 mt-4 align-content-center">
+            <table id="example" class="table table-striped table-hover display">
+                <thead>
+                    <tr>
+                        <th hidden>Comunidad</th>
+                        <th hidden>Rodal</th>
+                        <th hidden>Tratamiento</th>
+                        <th hidden>Superficie</th>
+                        <th hidden>Volumen marcado</th>
+                        <th class="find">Responsable</th>
+                        <th class="find">Género</th>
+                        <th class="find">Especie</th>
+                        <th>Diámetro</th>
+                        <th>Altura</th>
+                        <th>Volumen</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td hidden>Capulalpam</td>
+                        <td hidden>IV-a</td>
+                        <td hidden>PACL</td>
+                        <td hidden>231</td>
+                        <td hidden>123 m</td>                        
+                        <td>Adriana Hernández</td>
+                        <td>Pinus</td>
+                        <td>Pinus pátula</td>
+                        <td>12 </td>
+                        <td>6 </td>
+                        <td>74</td>
+                        <td class="text-center">
+                            <a href="" type="button" class="btn btn-outline-primary rounded-pill p-2"
+                                data-bs-toggle="modal" data-bs-target="#edit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+                                </svg>
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a href="" type="button" class="btn btn-outline-danger rounded-pill p-2"
+                                data-bs-toggle="modal" data-bs-target="#modalDelete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
+                                </svg>
+                            </a>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td hidden>Comunidad</td>
+                        <td hidden>Rodal</td>
+                        <td hidden>Tratamiento</td>
+                        <td hidden>Superficie</td>
+                        <td hidden>Volumen marcado</td>
+                        <td class="find">Responsable</td>
+                        <td class="find">Género</td>
+                        <td class="find">Especie</td>
+                        <td>Diámetro</td>
+                        <td>Altura</td>
+                        <td>Volumen</td>
+                        <td>Editar</td>
+                        <td>Eliminar</td>
+
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <div class="text-center mb-3 mt-5">
+            <a href="../historial/hitorial-registro.html" type="button" class="btn btn-lg btn-outline-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+                <span>Regresar</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación Borrar registro -->
+    <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-danger">
+                <div class="modal-header text-center">
+
+                    <h5 class="modal-title text-danger" id="exampleModalLabel">Eliminar registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row justify-content-around">
+                    <div class="p-2 text-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                            <path
+                                d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                            <path
+                                d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <p class="fw-semibold">¿Deseas eliminar este registro?</p>
+                        <span class="small text-gray">Esta acción no se podrá deshacer</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal de confirmación Borrar registro -->
+
+    <!-- Modal editar registro -->
+    <div class="modal fade" id="edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar registro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <h6 class="title-section">Responsable</h6>
+                        <div class="mb-3">
+                            <input disabled type="text" id="responsable" class="form-control box-input" placeholder=""
+                                value="Adriana Hernández Ramírez">
+                        </div>
+                        <div class="row">
+                            <div class="mb-3 col-md-6 col-lg-6">
+                                <h6 class="title-section">Género</h6>
+                                <select class="form-select box-input" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">IV-2a</option>
+                                    <option value="2">IV-5a</option>
+                                    <option value="3">IV-2b</option>
+                                    <option value="4">IV-1</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 col-md-6 col-lg-6">
+                                <h6 class="title-section">Especie</h6>
+                                <select class="form-select box-input" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">IV-2a</option>
+                                    <option value="2">IV-5a</option>
+                                    <option value="3">IV-2b</option>
+                                    <option value="4">IV-1</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <h6 class="title-section">Medidas</h6>
+                        <div class="row mx-3">
+                            <div class="col-lg-4">
+                                <label for="responsable" class="form-label">Diámetro</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control box-input" value="12">
+                                    <span class="input-group-text box-input">cm</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="responsable" class="form-label">Altura</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control box-input" value="5">
+                                    <span class="input-group-text box-input">m</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="responsable" class="form-label">Volumen</label>
+                                <div class="input-group mb-3">
+                                    <input disabled type="text" class="form-control box-input" value="3121">
+                                    <span class="input-group-text box-input">m</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal editar registro -->
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script src="../../js/jquery.dataTables.min.js"></script>
+    <script src="../../js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../js/jquery.dataTables.min.js"></script>
+    <script src="../../js/dataTables.bootstrap5.min.js"></script>
+    <script src="../../js/export-data/dataTables.buttons.min.js"></script>
+    <script src="../../js/export-data/buttons.bootstrap5.min.js"></script>
+    <script src="../../js/export-data/jszip.min.js"></script>
+    <script src="../../js/export-data/pdfmake.min.js"></script>
+    <script src="../../js/export-data/vfs_fonts.js"></script>
+    <script src="../../js/export-data/buttons.html5.min.js"></script>
+    <script src="../../js/export-data/buttons.print.min.js"></script>
+    <script src="../../js/export-data/buttons.colVis.min.js"></script>
+    <script>
+        /* Formatting function for row details - modify as you need */
+        function format(d) {
+            // `d` is the original data object for the row
+            return (
+                '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+                '<tr>' +
+                '<td>Fecha de registro:</td>' +
+                '<td>' +
+                "30/09/2022" +
+                '</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>Responsable:</td>' +
+                '<td>' +
+                "Adriana Hernández Ramírez" +
+                '</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>Diámetro:</td>' +
+                '<td>12 cm</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>Altura:</td>' +
+                '<td>5 m</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>Volumen:</td>' +
+                '<td>23 m</td>' +
+                '</tr>' +
+                '<td>Volumen:</td>' +
+                '<td>23 m</td>' +
+                '</tr>' +
+                '</table>'
+            );
+        }
+        $(document).ready(function () {
+            var table = $('#example').DataTable({
+                // dom: 'Bfrtilp',
+                dom:"<'d-flex flex-row justify-content-around py-3 col-12' <'dt-buttons btn-group flex-wrap col-5'B> <'col-5'f>  >" ,
+                          
+
+                buttons: [
+                    {
+                        responsive: true,
+                        extend: 'excelHtml5',
+                        text: '<img src="/img/excel.png" alt="" width="20px">',
+                        titleAttr:'Exportar a excel'
+                    }
+                ], //'copy','colvis',
+                "order": [
+                    [1, "asc"]
+                ],
+                'columnDefs': [{
+                    "width": "auto",
+                    "targets": [11,12],
+                    "orderable": false,
+                }],
+
+                initComplete: function () {
+                    this.api()
+                        .columns('.find')
+                        .every(function () {
+                            var column = this;
+                            var select = $('<select class="form-select" aria-label="Default select example"><option value="">Todo</option></select>')
+                                .appendTo($(column.footer()).empty())
+                                .on('change', function () {
+                                    var val = $.fn.dataTable.util.escapeRegex($(this).val());
+
+                                    column.search(val ? '^' + val + '$' : '', true, false).draw();
+                                });
+
+                            column
+                                .data()
+                                .unique()
+                                .sort()
+                                .each(function (d, j) {
+                                    select.append('<option value="' + d + '">' + d + '</option>');
+                                });
+                        });
+                },
+                language: {
+                    url: "../../json/dataTableSpanishLanguage.json",
+                },
+                responsive: true,
+                // scrollY: '200px',
+                // scrollCollapse: true
+
+                //Suma
+                footerCallback: function (row, data, start, end, display) {
+                    var api = this.api();
+
+                    // Remove the formatting to get integer data for summation
+                    var intVal = function (i) {
+                        return typeof i === 'string' ? i.replace(/[\$,]/g, '') * 1 : typeof i === 'number' ? i : 0;
+                    };
+
+                    // Total over all pages
+                    total = api
+                        .column(8)
+                        .data()
+                        .reduce(function (a, b) {
+                            return intVal(a) + intVal(b);
+                        }, 0);
+
+                    // Total over this page
+                    pageTotal = api
+                        .column(8, { page: 'current' })
+                        .data()
+                        .reduce(function (a, b) {
+                            return intVal(a) + intVal(b);
+                        }, 0);
+
+                    // Update footer
+                    $(api.column(8).footer()).html('$' + pageTotal + ' ( $' + total + ' total)');
+                },
+
+            });
+
+            // Add event listener for opening and closing details
+            $('#example tbody').on('click', 'td.dt-control', function () {
+                var tr = $(this).closest('tr');
+                var row = table.row(tr);
+
+                if (row.child.isShown()) {
+                    // This row is already open - close it
+                    row.child.hide();
+                    tr.removeClass('shown');
+                    this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">' +
+                        '<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>' +
+                        '<path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>' +
+                        '</svg>'
+
+                } else {
+                    // Open this row
+                    row.child(format(row.data())).show();
+                    tr.addClass('shown');
+                    this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">' +
+                        '<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />' +
+                        '</svg >'
+
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

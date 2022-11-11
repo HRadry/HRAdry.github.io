@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/animate.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-nav sticky-top px-1">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../menu.html"><img src="../../img/forest.png" alt="" width="50px"></a>
+
+            <div class="dropdown column">
+                <div class="border-0 dropdown-toggle d-flex flex-row" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <div class="p-2">
+                        <img src="../../img/profile.svg" alt="" width="35px">
+                    </div>
+                    <div>
+                        <span class="fw-semibold m-0 small">Adriana Hernández</span class="fw-semibold">
+                        <br>
+                        <span class="small">Técnico</span>
+                    </div>
+                </div>
+                <ul class="dropdown-menu">
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person text-color-primary" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                            Mi perfil
+                        </button>
+                    </li>
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-door-open text-color-primary" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z" />
+                                <path
+                                    d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z" />
+                            </svg>
+                            Cerrar sesión
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-3 col-sm-12 col-lg-6 animate__animated animate__fadeIn">
+        <div class="text-center mb-3">
+            <h2 class="title-page">Registro</h2>
+        </div>        
+        
+        <h4 class="title-section">Datos del marqueo</h4>
+        <div class="rounded border mb-3">
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Fecha:</div>
+                <div class="col-6 fw-light">06/10/2022</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Comunidad:</div>
+                <div class="col-6 fw-light">Capulalpam</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Rodal:</div>
+                <div class="col-6 fw-light">IV-2a</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Subrodal:</div>
+                <div class="col-6 fw-light">Zona libre</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Tratamiento:</div>
+                <div class="col-6 fw-light">PACL</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 bg-light">
+                <div class="col-6 fw-bold">Superficie:</div>
+                <div class="col-6 fw-light">Xiacui</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0">
+                <div class="col-6 fw-bold">Género:</div>
+                <div class="col-6 fw-light">Pinus, Alnus, Quercus</div>
+            </div>
+            <div class="row border-bottom py-2 mx-0 rounded-bottom bg-light">
+                <div class="col-6 fw-bold">Volumen máximo</div>
+                <div class="col-6 fw-light">233</div>
+            </div>
+            <div class="d-flex flex-row m-0 p-2">
+                <div class="col-6 px-2">
+                    <span class="fw-bold">Comentarios:</span>
+                </div>
+            </div>
+            <div class="d-flex flex-row m-0 p-2">
+                <textarea readonly
+                    class="form-control">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, dignissimos exercitationem autem laudantium, magni quod sunt debitis quibusdam neque aperiam molestiae. Quo et labore ex! Voluptatem dolorum adipisci qui libero?</textarea>
+            </div>
+        </div>
+
+        <div class="card d-flex flex-row justify-content-around px-3 pt-2 text-center">
+            <p class="fw-bold">Vol. restante: <br><span class="fw-bold text-primary">200m³</span></p>
+            <p class="fw-bold">Árboles marcados: <br><span class="fw-bold text-primary">48</span></p>
+        </div>
+
+        <!-- <div class="alert alert-warning d-flex align-items-center justify-content-center gap-2 mt-4" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <div>
+                        <span>23m³ para alcanzar el volumen máximo</span>
+                    </div>
+                </div>
+
+                <div class="alert alert-danger d-flex align-items-center justify-content-center gap-2 mt-4" role="alert">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <div>
+                        <span>Volumen máximo alcanzado</span>
+                    </div>
+                </div> -->
+
+        <div class="text-center my-3 bt mt-5" id="addForm">
+            <button type="button" class="btn btn-lg btn-primary" onclick="newForm()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+                Agregar formulario
+            </button>
+        </div>
+
+        <div class="formulario">
+            <form id="inputForm" action="" class="needs-validation col-lg-12 card p-3 shadow-lg registro">
+                <div class="gap-4">
+                    <div class="row">
+
+                        <div class="flex-grow-1 mb-3 col-6" text-center>
+                            <h6 class="title-section">Género</h6>
+                            <select class="form-select form-select-sm fst-italic fw-semibold box-input "
+                                aria-label="Default select example">
+                                <option selected>Selecciona una opción</option>
+                                <option value="1">Pinus</option>
+                                <option value="2">Quercus</option>
+                                <option value="3">Alnus</option>
+                            </select>
+                        </div>
+                        <div class="flex-grow-1 col-6" text-center>
+                            <h6 class="title-section">Especie</h6>
+                            <select class="form-select form-select-sm fst-italic fw-semibold box-input"
+                                aria-label="Default select example">
+                                <option selected>Selecciona una opción</option>
+                                <option value="1">Pinus pátula</option>
+                                <option value="2">Pinus oaxacana</option>
+                                <option value="3">Pinus douglasiana</option>
+                                <option value="3">Pinus ayacahuite</option>
+                                <option value="3">Pinus pseudostrobus</option>
+                                <option value="3">Pinus teocote</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mx-1 text-center">
+                        <div class="flex-grow-1 col-6">
+                            <label for="volumen" class="form-label fw-normal">Vol. máximo</label>
+                            <input type="text" disabled name="volumen" id="volumen"
+                                class="form-control form-control-sm fw-normal text-center fw-semibold rounded-pill border"
+                                value="234 m³ ">
+                        </div>
+                        <div class="flex-grow-1 col-6">
+                            <label for="volumen" class="form-label fw-normal">Vol. restante</label>
+                            <input type="text" disabled name="volumen" id="volumen"
+                                class="form-control form-control-sm fw-normal text-center fw-semibold rounded-pill border"
+                                value="200 m³ ">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="text-center mt-4 mb-3">
+                    <button id="addRow" type="button" class="btn btn-sm btn-primary" onclick="newRow()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                        Agregar registro
+                    </button>
+                </div>
+                <div id="newRow"></div>
+                <div id="inputFormRow" class="inputRow d-flex flex-row gap-1">
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control form-control-sm box-input" placeholder="Diámetro">
+                        <span class="input-group-text">cm</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control form-control-sm box-input" placeholder="Altura">
+                        <span class="input-group-text">m</span>
+                    </div>
+                    <div>
+                        <button id="removeRow" type="button" class="btn btn-sm p-1 my-1 btn-outline-danger"
+                            data-bs-toggle="modal" data-bs-target="#modalDeleteRegistro"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-trash" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                <path fill-rule="evenodd"
+                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                            </svg></button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-info p-1 my-1" data-bs-toggle="modal"
+                            data-bs-target="#comentarios">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="inputFormRow" class="inputRow d-flex flex-row gap-1">
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control form-control-sm box-input" placeholder="Diámetro">
+                        <span class="input-group-text">cm</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control form-control-sm box-input" placeholder="Altura">
+                        <span class="input-group-text">m</span>
+                    </div>
+                    <div>
+                        <button id="removeRow" type="button" class="btn btn-sm p-1 my-1 btn-outline-danger"
+                            data-bs-toggle="modal" data-bs-target="#modalDeleteRegistro"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-trash" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                <path fill-rule="evenodd"
+                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                            </svg></button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-info p-1 my-1" data-bs-toggle="modal"
+                            data-bs-target="#comentarios">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                <path
+                                    d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="inputFormRow" class="inputRow d-flex flex-row gap-1">
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control form-control-sm box-input" placeholder="Diámetro">
+                        <span class="input-group-text">cm</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control form-control-sm box-input" placeholder="Altura">
+                        <span class="input-group-text">m</span>
+                    </div>
+                    <div>
+                        <button id="removeRow" type="button" class="btn btn-sm p-1 my-1 btn-outline-danger"
+                            data-bs-toggle="modal" data-bs-target="#modalDeleteRegistro"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-trash" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                <path fill-rule="evenodd"
+                                    d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                            </svg></button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-info p-1 my-1" data-bs-toggle="modal"
+                            data-bs-target="#comentarios">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                                <path
+                                    d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                <path
+                                    d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center my-3">
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                        data-bs-target="#modalDelete">Borrar formulario</button>
+                </div>
+            </form>
+            <br>
+        </div>
+        <!-- <div id="newForm"></div> -->
+
+        <div class="d-flex flex-column justify-content-around gap-3 my-3" id="buttons">
+            <a href="#" type="submit" class="btn btn-lg btn-outline-primary">Guardar avance</a>
+            <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modalFinalizar">Finalizar</button>
+            <button type="button" class="btn btn-lg btn-outline-danger" data-bs-toggle="modal"
+                data-bs-target="#modalCancelar">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- Modal de confirmación Borrar formulario -->
+    <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-danger">
+                <div class="modal-header text-center">
+
+                    <h5 class="modal-title text-color-danger" id="exampleModalLabel">Eliminar formulario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row justify-content-around">
+                    <div class="p-2 text-color-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                            <path
+                                d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                            <path
+                                d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <p class="fw-semibold">¿Deseas eliminar este formulario?</p>
+                        <span class="small text-gray">Esta acción no se podrá deshacer</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal de confirmación Borrar formulario -->
+
+    <!-- Modal de confirmación Borrar registro -->
+    <div class="modal fade" id="modalDeleteRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-danger">
+                <div class="modal-header text-center">
+
+                    <h5 class="modal-title text-color-danger" id="exampleModalLabel">Eliminar registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row justify-content-around">
+                    <div class="p-2 text-color-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                            <path
+                                d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                            <path
+                                d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <p class="fw-semibold">¿Deseas eliminar este registro?</p>
+                        <span class="small text-gray">Esta acción no se podrá deshacer</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal de confirmación Borrar registro -->
+
+    <!-- Modal de confirmación Cancelar -->
+    <div class="modal fade" id="modalCancelar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-danger">
+                <div class="modal-header text-center">
+
+                    <h5 class="modal-title text-color-danger" id="exampleModalLabel">Cancelar registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row justify-content-around">
+                    <div class="p-2 text-color-danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                            <path
+                                d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                            <path
+                                d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                        </svg>
+                    </div>
+                    <div class="text-center">
+                        <p class="fw-semibold">¿Deseas cancelar este registro?</p>
+                        <span class="small text-gray">La información registrada no se podrá recuperar</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal de confirmación Cancelar -->
+
+    <!-- Modal de confirmación finalizar -->
+    <div class="modal fade" id="modalFinalizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-info">
+                <div class="modal-header text-center">
+
+                    <h5 class="modal-title text-color-info" id="exampleModalLabel">Finalizar registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row justify-content-around">
+                    <div class="p-2 text-color-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                          </svg>
+                    </div>
+                    <div class="text-center">
+                        <p>¿Deseas finalizar el registro de la información?</p>
+                        <span class="small text-gray">Una vez finalizada no podrás hacer cambios</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar</button>
+                    <button type="button" class="btn btn-info">Finalizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal de confirmación Finalizar -->
+
+    <!-- Modal comentarios -->
+    <div class="modal fade" id="comentarios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Observaciones</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="message-text"
+                            placeholder="Escribe una observación..."></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal comentarios -->
+
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        let newForm = function () {
+            $("<section/>").insertAfter("[id='addForm']")
+                .append($(".formulario").html())
+                .addClass("animate__animated animate__slideInLeft border-time ")
+                // $('.registro').addClass('border-time');             
+        }
+
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', () => {
+                const toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+
+        // let newRow = function () {
+        //     $("<ssection/>").insertAfter("[id='newRow']")
+        //         .append($(".inputRow").html())
+        // }
+    </script>
+</body>
+
+</html>
