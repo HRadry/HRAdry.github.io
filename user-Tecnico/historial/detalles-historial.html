@@ -167,8 +167,6 @@
                         <th>Diámetro</th>
                         <th>Altura</th>
                         <th>Volumen</th>
-                        <th>Editar</th>
-                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -184,26 +182,6 @@
                         <td>12 </td>
                         <td>6 </td>
                         <td>74</td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-primary rounded-pill p-2"
-                                data-bs-toggle="modal" data-bs-target="#edit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
-                                </svg>
-                            </a>
-                        </td>
-                        <td class="text-center">
-                            <a href="" type="button" class="btn btn-outline-danger rounded-pill p-2"
-                                data-bs-toggle="modal" data-bs-target="#modalDelete">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
-                                </svg>
-                            </a>
-                        </td>
                     </tr>
 
                 </tbody>
@@ -220,8 +198,6 @@
                         <td>Diámetro</td>
                         <td>Altura</td>
                         <td>Volumen</td>
-                        <td>Editar</td>
-                        <td>Eliminar</td>
 
                     </tr>
                 </tfoot>
@@ -240,116 +216,6 @@
         </div>
     </div>
 
-    <!-- Modal de confirmación Borrar registro -->
-    <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modal-danger">
-                <div class="modal-header text-center">
-
-                    <h5 class="modal-title text-danger" id="exampleModalLabel">Eliminar registro</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex flex-row justify-content-around">
-                    <div class="p-2 text-danger">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
-                            class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
-                            <path
-                                d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
-                            <path
-                                d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
-                        </svg>
-                    </div>
-                    <div class="text-center">
-                        <p class="fw-semibold">¿Deseas eliminar este registro?</p>
-                        <span class="small text-gray">Esta acción no se podrá deshacer</span>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-danger">Eliminar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Modal de confirmación Borrar registro -->
-
-    <!-- Modal editar registro -->
-    <div class="modal fade" id="edit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar registro</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <h6 class="title-section">Responsable</h6>
-                        <div class="mb-3">
-                            <input disabled type="text" id="responsable" class="form-control box-input" placeholder=""
-                                value="Adriana Hernández Ramírez">
-                        </div>
-                        <div class="row">
-                            <div class="mb-3 col-md-6 col-lg-6">
-                                <h6 class="title-section">Género</h6>
-                                <select class="form-select box-input" id="floatingSelect"
-                                    aria-label="Floating label select example">
-                                    <option selected>Selecciona una opción</option>
-                                    <option value="1">IV-2a</option>
-                                    <option value="2">IV-5a</option>
-                                    <option value="3">IV-2b</option>
-                                    <option value="4">IV-1</option>
-                                </select>
-                            </div>
-                            <div class="mb-3 col-md-6 col-lg-6">
-                                <h6 class="title-section">Especie</h6>
-                                <select class="form-select box-input" id="floatingSelect"
-                                    aria-label="Floating label select example">
-                                    <option selected>Selecciona una opción</option>
-                                    <option value="1">IV-2a</option>
-                                    <option value="2">IV-5a</option>
-                                    <option value="3">IV-2b</option>
-                                    <option value="4">IV-1</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <h6 class="title-section">Medidas</h6>
-                        <div class="row mx-3">
-                            <div class="col-lg-4">
-                                <label for="responsable" class="form-label">Diámetro</label>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control box-input" value="12">
-                                    <span class="input-group-text box-input">cm</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="responsable" class="form-label">Altura</label>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control box-input" value="5">
-                                    <span class="input-group-text box-input">m</span>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="responsable" class="form-label">Volumen</label>
-                                <div class="input-group mb-3">
-                                    <input disabled type="text" class="form-control box-input" value="3121">
-                                    <span class="input-group-text box-input">m</span>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Guardar cambios</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Modal editar registro -->
-
     <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -358,70 +224,17 @@
     <script src="../../js/dataTables.bootstrap5.min.js"></script>
     <script src="../../js/jquery.dataTables.min.js"></script>
     <script src="../../js/dataTables.bootstrap5.min.js"></script>
-    <script src="../../js/export-data/dataTables.buttons.min.js"></script>
-    <script src="../../js/export-data/buttons.bootstrap5.min.js"></script>
-    <script src="../../js/export-data/jszip.min.js"></script>
-    <script src="../../js/export-data/pdfmake.min.js"></script>
-    <script src="../../js/export-data/vfs_fonts.js"></script>
-    <script src="../../js/export-data/buttons.html5.min.js"></script>
-    <script src="../../js/export-data/buttons.print.min.js"></script>
-    <script src="../../js/export-data/buttons.colVis.min.js"></script>
     <script>
-        /* Formatting function for row details - modify as you need */
-        function format(d) {
-            // `d` is the original data object for the row
-            return (
-                '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
-                '<tr>' +
-                '<td>Fecha de registro:</td>' +
-                '<td>' +
-                "30/09/2022" +
-                '</td>' +
-                '</tr>' +
-                '<tr>' +
-                '<td>Responsable:</td>' +
-                '<td>' +
-                "Adriana Hernández Ramírez" +
-                '</td>' +
-                '</tr>' +
-                '<tr>' +
-                '<td>Diámetro:</td>' +
-                '<td>12 cm</td>' +
-                '</tr>' +
-                '<tr>' +
-                '<td>Altura:</td>' +
-                '<td>5 m</td>' +
-                '</tr>' +
-                '<tr>' +
-                '<td>Volumen:</td>' +
-                '<td>23 m</td>' +
-                '</tr>' +
-                '<td>Volumen:</td>' +
-                '<td>23 m</td>' +
-                '</tr>' +
-                '</table>'
-            );
-        }
+       
         $(document).ready(function () {
             var table = $('#example').DataTable({
-                // dom: 'Bfrtilp',
-                dom:"<'d-flex flex-row justify-content-around py-3 col-12' <'dt-buttons btn-group flex-wrap col-5'B> <'col-5'f>  >" ,
-                          
-
-                buttons: [
-                    {
-                        responsive: true,
-                        extend: 'excelHtml5',
-                        text: '<img src="/img/excel.png" alt="" width="20px">',
-                        titleAttr:'Exportar a excel'
-                    }
-                ], //'copy','colvis',
+            
                 "order": [
                     [1, "asc"]
                 ],
                 'columnDefs': [{
                     "width": "auto",
-                    "targets": [11,12],
+                    "targets": [],
                     "orderable": false,
                 }],
 
@@ -485,30 +298,6 @@
 
             });
 
-            // Add event listener for opening and closing details
-            $('#example tbody').on('click', 'td.dt-control', function () {
-                var tr = $(this).closest('tr');
-                var row = table.row(tr);
-
-                if (row.child.isShown()) {
-                    // This row is already open - close it
-                    row.child.hide();
-                    tr.removeClass('shown');
-                    this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">' +
-                        '<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>' +
-                        '<path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>' +
-                        '</svg>'
-
-                } else {
-                    // Open this row
-                    row.child(format(row.data())).show();
-                    tr.addClass('shown');
-                    this.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">' +
-                        '<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />' +
-                        '</svg >'
-
-                }
-            });
         });
     </script>
 </body>
