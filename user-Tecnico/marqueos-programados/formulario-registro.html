@@ -468,10 +468,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script>
-        let newForm = function () {
+        var count = 0;
+        let newForm = function () {            
+            count = count + 1;
             $("<section/>").insertAfter("[id='addForm']")
+                
                 .append($(".formulario").html())
-                .addClass("animate__animated animate__zoomIn border-time ")
+                // .addClass("animate__animated animate__slideOutDown")
+                .addClass("animate__animated animate__zoomIn")
                 // $('.registro').addClass('border-time');             
         }
 
