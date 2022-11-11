@@ -58,8 +58,8 @@
     <div class="container mt-3 col-sm-12 col-lg-6 animate__animated animate__fadeIn">
         <div class="text-center mb-3">
             <h2 class="title-page">Registro</h2>
-        </div>        
-        
+        </div>
+
         <h4 class="title-section">Datos del marqueo</h4>
         <div class="rounded border mb-3">
             <div class="row border-bottom py-2 mx-0">
@@ -186,7 +186,8 @@
 
                 </div>
                 <div class="text-center mt-4 mb-3">
-                    <button id="addRow" type="button" class="btn btn-sm btn-primary" onclick="newRow()">
+                    <button id="addRow" type="button" class="btn btn-sm btn-primary" onclick="newRow()" data-bs-toggle="modal"
+                    data-bs-target="#alerta">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-plus" viewBox="0 0 16 16">
                             <path
@@ -346,7 +347,8 @@
     <!-- /Modal de confirmación Borrar formulario -->
 
     <!-- Modal de confirmación Borrar registro -->
-    <div class="modal fade" id="modalDeleteRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalDeleteRegistro" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content modal-danger">
                 <div class="modal-header text-center">
@@ -422,10 +424,12 @@
                 </div>
                 <div class="modal-body d-flex flex-row justify-content-around">
                     <div class="p-2 text-color-info">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                            class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg>
                     </div>
                     <div class="text-center">
                         <p>¿Deseas finalizar el registro de la información?</p>
@@ -464,19 +468,33 @@
     </div>
     <!-- /Modal comentarios -->
 
+    <!-- Alerta -->
+    <div class="modal fade" id="alerta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Alerta!</strong> Estás cerca de completar el volumen máximo.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+        </div>
+    </div>
+    <!-- Alerta -->
+
     <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script>
         var count = 0;
-        let newForm = function () {            
+        let newForm = function () {
             count = count + 1;
             $("<section/>").insertAfter("[id='addForm']")
-                
+
                 .append($(".formulario").html())
+                .addClass(" " + count)
                 // .addClass("animate__animated animate__slideOutDown")
                 .addClass("animate__animated animate__zoomIn")
-                // $('.registro').addClass('border-time');             
+            // $('.formulario').addClass('animate__animated animate__zoomIn'); 
+            // $('.'+count).addClass('animate__animated animate__zoomIn');             
+
         }
 
         const toastTrigger = document.getElementById('liveToastBtn')

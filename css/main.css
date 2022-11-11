@@ -73,10 +73,14 @@ body{
   border-radius: 15px;
 }
 
-
 .bg-primary {
   background: #72CC50 !important;
 }
+
+.bg-warning {
+  background: #F2D264 !important;
+}
+
 
 .bg-soft {
   background-color: #71cc5032;
@@ -96,6 +100,10 @@ body{
 
 .text-color-info{
   color: #1e40af;
+}
+
+.text-color-warning{
+  color: #F2D264;
 }
 
 /* -Buttons- */
@@ -452,6 +460,10 @@ body{
 
 .modal-info{
   border: solid 3px #1e40af;
+}
+
+.modal-warning{
+  border: solid 3px #F2D264;
 }
 
 /* /Main */
