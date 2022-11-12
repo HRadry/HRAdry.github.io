@@ -338,7 +338,7 @@
                                 placeholder="Tratamiento">
                             <label for="floatingInput">Tratamiento</label>
                         </div>
-                        <div class="form-floating input-group mx-3 border">
+                        <div class="form-floating input-group mx-3 border px-3">
                             <input type="text" class="form-control form-control-sm box-input" id="form-floating"
                                 placeholder="Volumen">
                             <span class="input-group-text rounded-end">m³</span>
@@ -347,19 +347,19 @@
 
                         <h6 class="title-section">Género y volumen</h6>
                         <section class="table-responsive-sm mx-3">
-                            <table id="rodales" class="table table-striped text-center">
+                            <table id="new-rodal" class="table table-striped text-center">
                                 <thead class="thead-style">
                                     <tr>
                                         <th class="fw-semibold">Género</th>
                                         <th class="fw-semibold">Volumen</th>
-                                        <th></th>
+                                        <th>Eliminar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td>
                                             <div>
-                                                <select class="form-select form-select-sm" name="" id="">
+                                                <select class="form-select form-select-sm box-input" name="" id="">
                                                     <option selected>Selecciona una opción</option>
                                                     <option value="">Pinus</option>
                                                     <option value="">Alnus</option>
@@ -369,7 +369,7 @@
                                         </td>
                                         <td>
                                             <div class="input-group input-group-sm mb-3">
-                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control form-control-sm box-input">
                                                 <span class="input-group-text" id="inputGroup-sizing-sm">m³</span>
                                             </div>
                                         </td>
@@ -607,7 +607,7 @@
     <script src="../../js/dataTables.bootstrap5.min.js"></script>
     <script>
         $(document).ready(function () {
-            var t = $('#rodales').DataTable({
+            var t = $('#new-rodal').DataTable({
                 'filter': false,
                 'info': false,
                 'bPaginate': false,
@@ -615,21 +615,20 @@
 
             });
             let column1 = `        <div>
-                                                <select class="form-select form-select-sm" name="" id="">
+                                                <select class="form-select form-select-sm box-input" name="" id="">
                                                     <option selected>Selecciona una opción</option>
                                                     <option value="">Pinus</option>
                                                     <option value="">Alnus</option>
                                                     <option value="">Querus</option>
                                                 </select>
                                             </div>`;
-            let column2 = `                                    
+            let column2 = `                         
             <div class="input-group input-group-sm mb-3">
                                                 <input type="text" class="form-control">
                                                 <span class="input-group-text" id="inputGroup-sizing-sm">m³</span>
                                               </div>`;
-            let column3 = `
-                                            <button type="button" id="button" class="btn btn-sm btn-outline-danger btn-remove"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            let column3 = ` <button type="button" id="button" class="btn btn-delete rounded-circle btn-remove"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
                                                 class="bi bi-trash-fill" viewBox="0 0 16 16">
                                                 <path
                                                     d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
