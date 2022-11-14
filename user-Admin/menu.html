@@ -157,6 +157,7 @@
         </div>
     </div>
 
+    <!-- Perfil -->
     <div class="modal fade" id="miPerfil" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
@@ -197,12 +198,13 @@
                 </div>
             </div>
             <div class="modal-footer">
-              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Editar perfil</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button class="btn btn-primary" data-bs-target="#editarPerfil" data-bs-toggle="modal">Editar perfil</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal fade" id="editarPerfil" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header bg-primary text-white">
@@ -216,23 +218,23 @@
                     </div>
                     <div>
                         <div class="form-floating mb-3">
-                            <input type="name" class="form-control box-input" id="form-floating" placeholder="Nombre">
+                            <input type="name" class="form-control box-input" id="form-floating" placeholder="Nombre" value="Emmanuel">
                             <label for="floatingInput">Nombre</label>
                         </div>
                         <div class="row justify-content-between">
                             <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
-                                <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
+                                <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno" value="Gracida">
                                 <label for="form-floating" class="form-label ps-4">Apellido paterno</label>
                             </div>
                             <div class="form-floating mb-3 col-md-6 col-lg-6">
-                                <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
+                                <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-materno" value="Tapia">
                                 <label for="form-floating" class="form-label ps-4">Apellido materno</label>
                             </div>
                         </div>
                     </div>
                     <div class="form-floating mb-3">
                         <select class="form-select box-input" id="floatingSelect" aria-label="Floating label select example">
-                            <option selected>Selecciona una opción</option>
+                            <option selected>Capulalpam</option>
                             <option value="1">Capulalpam</option>
                             <option value="2">Comaltepec</option>
                             <option value="3">La Trinidad</option>
@@ -241,23 +243,23 @@
                         <label for="floatingSelect">Comunidad a la que pertenece</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
+                        <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno" value="123445678">
                         <label for="form-floating" class="form-label">Número telefónico</label>
                     </div>
                     <div class="row justify-content-between">
                         <div class="form-floating mb-3 col-md-6 col-lg-6">
-                            <input type="mail" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
+                            <input type="mail" class="form-control box-input" id="form-floating" placeholder="apellido-paterno" value="emma@gmail.com">
                             <label for="form-floating" class="form-label ps-4">Correo</label>
                         </div>
                         <div class="form-floating mb-3 col-md-6 col-lg-6">
-                            <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno">
+                            <input type="text" class="form-control box-input" id="form-floating" placeholder="apellido-paterno" value="emma123">
                             <label for="form-floating" class="form-label ps-4">Contraseña</label>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <a href="" type="submit" class="btn btn-secondary">
+                <a href="" type="submit" class="btn btn-secondary" data-bs-target="#miPerfil" data-bs-toggle="modal">
                     <span>Cancelar</span>
                 </a>
                 <a href="#" type="submit" class="btn btn-primary" data-bs-target="#miPerfil" data-bs-toggle="modal">
@@ -267,6 +269,8 @@
           </div>
         </div>
       </div>
+
+      <!-- /Perfil -->
     <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
